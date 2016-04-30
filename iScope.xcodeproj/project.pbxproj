@@ -28,6 +28,75 @@
 		2FF7DF581CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */; };
 		2FF7DF591CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */; };
 		2FF7DF5A1CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */; };
+		2FF7DF701CD4C9130015EC1A /* UIImage+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF631CD4C9130015EC1A /* UIImage+Rotation.swift */; };
+		2FF7DF711CD4C9130015EC1A /* UIImage+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF631CD4C9130015EC1A /* UIImage+Rotation.swift */; };
+		2FF7DF721CD4C9130015EC1A /* UIImage+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF631CD4C9130015EC1A /* UIImage+Rotation.swift */; };
+		2FF7DF731CD4C9130015EC1A /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF641CD4C9130015EC1A /* UIView+Radius.swift */; };
+		2FF7DF741CD4C9130015EC1A /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF641CD4C9130015EC1A /* UIView+Radius.swift */; };
+		2FF7DF751CD4C9130015EC1A /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF641CD4C9130015EC1A /* UIView+Radius.swift */; };
+		2FF7DF791CD4C9130015EC1A /* SKCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF661CD4C9130015EC1A /* SKCaptionView.swift */; };
+		2FF7DF7A1CD4C9130015EC1A /* SKCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF661CD4C9130015EC1A /* SKCaptionView.swift */; };
+		2FF7DF7B1CD4C9130015EC1A /* SKCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF661CD4C9130015EC1A /* SKCaptionView.swift */; };
+		2FF7DF7C1CD4C9130015EC1A /* SKDetectingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF671CD4C9130015EC1A /* SKDetectingImageView.swift */; };
+		2FF7DF7D1CD4C9130015EC1A /* SKDetectingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF671CD4C9130015EC1A /* SKDetectingImageView.swift */; };
+		2FF7DF7E1CD4C9130015EC1A /* SKDetectingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF671CD4C9130015EC1A /* SKDetectingImageView.swift */; };
+		2FF7DF7F1CD4C9130015EC1A /* SKDetectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF681CD4C9130015EC1A /* SKDetectingView.swift */; };
+		2FF7DF801CD4C9130015EC1A /* SKDetectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF681CD4C9130015EC1A /* SKDetectingView.swift */; };
+		2FF7DF811CD4C9130015EC1A /* SKDetectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF681CD4C9130015EC1A /* SKDetectingView.swift */; };
+		2FF7DF821CD4C9130015EC1A /* SKIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF691CD4C9130015EC1A /* SKIndicatorView.swift */; };
+		2FF7DF831CD4C9130015EC1A /* SKIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF691CD4C9130015EC1A /* SKIndicatorView.swift */; };
+		2FF7DF841CD4C9130015EC1A /* SKIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF691CD4C9130015EC1A /* SKIndicatorView.swift */; };
+		2FF7DF851CD4C9130015EC1A /* SKLocalPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6A1CD4C9130015EC1A /* SKLocalPhoto.swift */; };
+		2FF7DF861CD4C9130015EC1A /* SKLocalPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6A1CD4C9130015EC1A /* SKLocalPhoto.swift */; };
+		2FF7DF871CD4C9130015EC1A /* SKLocalPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6A1CD4C9130015EC1A /* SKLocalPhoto.swift */; };
+		2FF7DF881CD4C9130015EC1A /* SKPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6B1CD4C9130015EC1A /* SKPhoto.swift */; };
+		2FF7DF891CD4C9130015EC1A /* SKPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6B1CD4C9130015EC1A /* SKPhoto.swift */; };
+		2FF7DF8A1CD4C9130015EC1A /* SKPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6B1CD4C9130015EC1A /* SKPhoto.swift */; };
+		2FF7DF8B1CD4C9130015EC1A /* SKPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6C1CD4C9130015EC1A /* SKPhotoBrowser.bundle */; };
+		2FF7DF8C1CD4C9130015EC1A /* SKPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6C1CD4C9130015EC1A /* SKPhotoBrowser.bundle */; };
+		2FF7DF8D1CD4C9130015EC1A /* SKPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6C1CD4C9130015EC1A /* SKPhotoBrowser.bundle */; };
+		2FF7DF8E1CD4C9130015EC1A /* SKPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6E1CD4C9130015EC1A /* SKPhotoBrowser.swift */; };
+		2FF7DF8F1CD4C9130015EC1A /* SKPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6E1CD4C9130015EC1A /* SKPhotoBrowser.swift */; };
+		2FF7DF901CD4C9130015EC1A /* SKPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6E1CD4C9130015EC1A /* SKPhotoBrowser.swift */; };
+		2FF7DF911CD4C9130015EC1A /* SKZoomingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6F1CD4C9130015EC1A /* SKZoomingScrollView.swift */; };
+		2FF7DF921CD4C9130015EC1A /* SKZoomingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6F1CD4C9130015EC1A /* SKZoomingScrollView.swift */; };
+		2FF7DF931CD4C9130015EC1A /* SKZoomingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF6F1CD4C9130015EC1A /* SKZoomingScrollView.swift */; };
+		2FF7DFA11CD4CA4D0015EC1A /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF951CD4CA4D0015EC1A /* image0.jpg */; };
+		2FF7DFA21CD4CA4D0015EC1A /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF951CD4CA4D0015EC1A /* image0.jpg */; };
+		2FF7DFA31CD4CA4D0015EC1A /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF951CD4CA4D0015EC1A /* image0.jpg */; };
+		2FF7DFA41CD4CA4D0015EC1A /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF961CD4CA4D0015EC1A /* image1.jpg */; };
+		2FF7DFA51CD4CA4D0015EC1A /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF961CD4CA4D0015EC1A /* image1.jpg */; };
+		2FF7DFA61CD4CA4D0015EC1A /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF961CD4CA4D0015EC1A /* image1.jpg */; };
+		2FF7DFA71CD4CA4D0015EC1A /* image10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF971CD4CA4D0015EC1A /* image10.jpg */; };
+		2FF7DFA81CD4CA4D0015EC1A /* image10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF971CD4CA4D0015EC1A /* image10.jpg */; };
+		2FF7DFA91CD4CA4D0015EC1A /* image10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF971CD4CA4D0015EC1A /* image10.jpg */; };
+		2FF7DFAA1CD4CA4D0015EC1A /* image12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF981CD4CA4D0015EC1A /* image12.jpg */; };
+		2FF7DFAB1CD4CA4D0015EC1A /* image12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF981CD4CA4D0015EC1A /* image12.jpg */; };
+		2FF7DFAC1CD4CA4D0015EC1A /* image12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF981CD4CA4D0015EC1A /* image12.jpg */; };
+		2FF7DFAD1CD4CA4D0015EC1A /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF991CD4CA4D0015EC1A /* image2.jpg */; };
+		2FF7DFAE1CD4CA4D0015EC1A /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF991CD4CA4D0015EC1A /* image2.jpg */; };
+		2FF7DFAF1CD4CA4D0015EC1A /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF991CD4CA4D0015EC1A /* image2.jpg */; };
+		2FF7DFB01CD4CA4D0015EC1A /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9A1CD4CA4D0015EC1A /* image3.jpg */; };
+		2FF7DFB11CD4CA4D0015EC1A /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9A1CD4CA4D0015EC1A /* image3.jpg */; };
+		2FF7DFB21CD4CA4D0015EC1A /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9A1CD4CA4D0015EC1A /* image3.jpg */; };
+		2FF7DFB31CD4CA4D0015EC1A /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9B1CD4CA4D0015EC1A /* image4.jpg */; };
+		2FF7DFB41CD4CA4D0015EC1A /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9B1CD4CA4D0015EC1A /* image4.jpg */; };
+		2FF7DFB51CD4CA4D0015EC1A /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9B1CD4CA4D0015EC1A /* image4.jpg */; };
+		2FF7DFB61CD4CA4D0015EC1A /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9C1CD4CA4D0015EC1A /* image5.jpg */; };
+		2FF7DFB71CD4CA4D0015EC1A /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9C1CD4CA4D0015EC1A /* image5.jpg */; };
+		2FF7DFB81CD4CA4D0015EC1A /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9C1CD4CA4D0015EC1A /* image5.jpg */; };
+		2FF7DFB91CD4CA4D0015EC1A /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9D1CD4CA4D0015EC1A /* image6.jpg */; };
+		2FF7DFBA1CD4CA4D0015EC1A /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9D1CD4CA4D0015EC1A /* image6.jpg */; };
+		2FF7DFBB1CD4CA4D0015EC1A /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9D1CD4CA4D0015EC1A /* image6.jpg */; };
+		2FF7DFBC1CD4CA4D0015EC1A /* image7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9E1CD4CA4D0015EC1A /* image7.jpg */; };
+		2FF7DFBD1CD4CA4D0015EC1A /* image7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9E1CD4CA4D0015EC1A /* image7.jpg */; };
+		2FF7DFBE1CD4CA4D0015EC1A /* image7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9E1CD4CA4D0015EC1A /* image7.jpg */; };
+		2FF7DFBF1CD4CA4D0015EC1A /* image8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9F1CD4CA4D0015EC1A /* image8.jpg */; };
+		2FF7DFC01CD4CA4D0015EC1A /* image8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9F1CD4CA4D0015EC1A /* image8.jpg */; };
+		2FF7DFC11CD4CA4D0015EC1A /* image8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF9F1CD4CA4D0015EC1A /* image8.jpg */; };
+		2FF7DFC21CD4CA4D0015EC1A /* image9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DFA01CD4CA4D0015EC1A /* image9.jpg */; };
+		2FF7DFC31CD4CA4D0015EC1A /* image9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DFA01CD4CA4D0015EC1A /* image9.jpg */; };
+		2FF7DFC41CD4CA4D0015EC1A /* image9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DFA01CD4CA4D0015EC1A /* image9.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +134,30 @@
 		2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicroscopeViewController.swift; sourceTree = "<group>"; };
 		2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroscopeViewController.swift; sourceTree = "<group>"; };
+		2FF7DF631CD4C9130015EC1A /* UIImage+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Rotation.swift"; sourceTree = "<group>"; };
+		2FF7DF641CD4C9130015EC1A /* UIView+Radius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
+		2FF7DF661CD4C9130015EC1A /* SKCaptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCaptionView.swift; sourceTree = "<group>"; };
+		2FF7DF671CD4C9130015EC1A /* SKDetectingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDetectingImageView.swift; sourceTree = "<group>"; };
+		2FF7DF681CD4C9130015EC1A /* SKDetectingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDetectingView.swift; sourceTree = "<group>"; };
+		2FF7DF691CD4C9130015EC1A /* SKIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKIndicatorView.swift; sourceTree = "<group>"; };
+		2FF7DF6A1CD4C9130015EC1A /* SKLocalPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKLocalPhoto.swift; sourceTree = "<group>"; };
+		2FF7DF6B1CD4C9130015EC1A /* SKPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhoto.swift; sourceTree = "<group>"; };
+		2FF7DF6C1CD4C9130015EC1A /* SKPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SKPhotoBrowser.bundle; sourceTree = "<group>"; };
+		2FF7DF6D1CD4C9130015EC1A /* SKPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPhotoBrowser.h; sourceTree = "<group>"; };
+		2FF7DF6E1CD4C9130015EC1A /* SKPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowser.swift; sourceTree = "<group>"; };
+		2FF7DF6F1CD4C9130015EC1A /* SKZoomingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKZoomingScrollView.swift; sourceTree = "<group>"; };
+		2FF7DF951CD4CA4D0015EC1A /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
+		2FF7DF961CD4CA4D0015EC1A /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		2FF7DF971CD4CA4D0015EC1A /* image10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image10.jpg; sourceTree = "<group>"; };
+		2FF7DF981CD4CA4D0015EC1A /* image12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image12.jpg; sourceTree = "<group>"; };
+		2FF7DF991CD4CA4D0015EC1A /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		2FF7DF9A1CD4CA4D0015EC1A /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		2FF7DF9B1CD4CA4D0015EC1A /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		2FF7DF9C1CD4CA4D0015EC1A /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		2FF7DF9D1CD4CA4D0015EC1A /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
+		2FF7DF9E1CD4CA4D0015EC1A /* image7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image7.jpg; sourceTree = "<group>"; };
+		2FF7DF9F1CD4CA4D0015EC1A /* image8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image8.jpg; sourceTree = "<group>"; };
+		2FF7DFA01CD4CA4D0015EC1A /* image9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image9.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +188,7 @@
 		2FF7DF071CD4A6150015EC1A = {
 			isa = PBXGroup;
 			children = (
+				2FF7DF611CD4C9130015EC1A /* SKPhotoBrowser */,
 				2FF7DF121CD4A6150015EC1A /* iScope */,
 				2FF7DF291CD4A6150015EC1A /* iScopeTests */,
 				2FF7DF341CD4A6150015EC1A /* iScopeUITests */,
@@ -115,6 +209,7 @@
 		2FF7DF121CD4A6150015EC1A /* iScope */ = {
 			isa = PBXGroup;
 			children = (
+				2FF7DF941CD4CA4D0015EC1A /* SampleImages */,
 				2FF7DF131CD4A6150015EC1A /* AppDelegate.swift */,
 				2FF7DF431CD4AAAC0015EC1A /* AlbumViewController.swift */,
 				2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */,
@@ -145,6 +240,53 @@
 				2FF7DF371CD4A6150015EC1A /* Info.plist */,
 			);
 			path = iScopeUITests;
+			sourceTree = "<group>";
+		};
+		2FF7DF611CD4C9130015EC1A /* SKPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				2FF7DF621CD4C9130015EC1A /* extensions */,
+				2FF7DF661CD4C9130015EC1A /* SKCaptionView.swift */,
+				2FF7DF671CD4C9130015EC1A /* SKDetectingImageView.swift */,
+				2FF7DF681CD4C9130015EC1A /* SKDetectingView.swift */,
+				2FF7DF691CD4C9130015EC1A /* SKIndicatorView.swift */,
+				2FF7DF6A1CD4C9130015EC1A /* SKLocalPhoto.swift */,
+				2FF7DF6B1CD4C9130015EC1A /* SKPhoto.swift */,
+				2FF7DF6C1CD4C9130015EC1A /* SKPhotoBrowser.bundle */,
+				2FF7DF6D1CD4C9130015EC1A /* SKPhotoBrowser.h */,
+				2FF7DF6E1CD4C9130015EC1A /* SKPhotoBrowser.swift */,
+				2FF7DF6F1CD4C9130015EC1A /* SKZoomingScrollView.swift */,
+			);
+			path = SKPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		2FF7DF621CD4C9130015EC1A /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2FF7DF631CD4C9130015EC1A /* UIImage+Rotation.swift */,
+				2FF7DF641CD4C9130015EC1A /* UIView+Radius.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		2FF7DF941CD4CA4D0015EC1A /* SampleImages */ = {
+			isa = PBXGroup;
+			children = (
+				2FF7DF951CD4CA4D0015EC1A /* image0.jpg */,
+				2FF7DF961CD4CA4D0015EC1A /* image1.jpg */,
+				2FF7DF971CD4CA4D0015EC1A /* image10.jpg */,
+				2FF7DF981CD4CA4D0015EC1A /* image12.jpg */,
+				2FF7DF991CD4CA4D0015EC1A /* image2.jpg */,
+				2FF7DF9A1CD4CA4D0015EC1A /* image3.jpg */,
+				2FF7DF9B1CD4CA4D0015EC1A /* image4.jpg */,
+				2FF7DF9C1CD4CA4D0015EC1A /* image5.jpg */,
+				2FF7DF9D1CD4CA4D0015EC1A /* image6.jpg */,
+				2FF7DF9E1CD4CA4D0015EC1A /* image7.jpg */,
+				2FF7DF9F1CD4CA4D0015EC1A /* image8.jpg */,
+				2FF7DFA01CD4CA4D0015EC1A /* image9.jpg */,
+			);
+			name = SampleImages;
+			path = ../SKPhotoBrowser/SampleImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +394,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF7DFAA1CD4CA4D0015EC1A /* image12.jpg in Resources */,
+				2FF7DFBF1CD4CA4D0015EC1A /* image8.jpg in Resources */,
+				2FF7DFBC1CD4CA4D0015EC1A /* image7.jpg in Resources */,
+				2FF7DFB61CD4CA4D0015EC1A /* image5.jpg in Resources */,
+				2FF7DFB31CD4CA4D0015EC1A /* image4.jpg in Resources */,
+				2FF7DFC21CD4CA4D0015EC1A /* image9.jpg in Resources */,
+				2FF7DFB01CD4CA4D0015EC1A /* image3.jpg in Resources */,
 				2FF7DF201CD4A6150015EC1A /* LaunchScreen.storyboard in Resources */,
+				2FF7DFA11CD4CA4D0015EC1A /* image0.jpg in Resources */,
 				2FF7DF1D1CD4A6150015EC1A /* Assets.xcassets in Resources */,
+				2FF7DFAD1CD4CA4D0015EC1A /* image2.jpg in Resources */,
+				2FF7DFB91CD4CA4D0015EC1A /* image6.jpg in Resources */,
 				2FF7DF1B1CD4A6150015EC1A /* Main.storyboard in Resources */,
+				2FF7DF8B1CD4C9130015EC1A /* SKPhotoBrowser.bundle in Resources */,
+				2FF7DFA41CD4CA4D0015EC1A /* image1.jpg in Resources */,
+				2FF7DFA71CD4CA4D0015EC1A /* image10.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +417,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF7DFB41CD4CA4D0015EC1A /* image4.jpg in Resources */,
+				2FF7DFB71CD4CA4D0015EC1A /* image5.jpg in Resources */,
+				2FF7DFA21CD4CA4D0015EC1A /* image0.jpg in Resources */,
+				2FF7DFC31CD4CA4D0015EC1A /* image9.jpg in Resources */,
+				2FF7DFAB1CD4CA4D0015EC1A /* image12.jpg in Resources */,
+				2FF7DFC01CD4CA4D0015EC1A /* image8.jpg in Resources */,
+				2FF7DF8C1CD4C9130015EC1A /* SKPhotoBrowser.bundle in Resources */,
+				2FF7DFA81CD4CA4D0015EC1A /* image10.jpg in Resources */,
+				2FF7DFBA1CD4CA4D0015EC1A /* image6.jpg in Resources */,
+				2FF7DFAE1CD4CA4D0015EC1A /* image2.jpg in Resources */,
+				2FF7DFBD1CD4CA4D0015EC1A /* image7.jpg in Resources */,
+				2FF7DFB11CD4CA4D0015EC1A /* image3.jpg in Resources */,
+				2FF7DFA51CD4CA4D0015EC1A /* image1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +437,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF7DFB51CD4CA4D0015EC1A /* image4.jpg in Resources */,
+				2FF7DFB81CD4CA4D0015EC1A /* image5.jpg in Resources */,
+				2FF7DFA31CD4CA4D0015EC1A /* image0.jpg in Resources */,
+				2FF7DFC41CD4CA4D0015EC1A /* image9.jpg in Resources */,
+				2FF7DFAC1CD4CA4D0015EC1A /* image12.jpg in Resources */,
+				2FF7DFC11CD4CA4D0015EC1A /* image8.jpg in Resources */,
+				2FF7DF8D1CD4C9130015EC1A /* SKPhotoBrowser.bundle in Resources */,
+				2FF7DFA91CD4CA4D0015EC1A /* image10.jpg in Resources */,
+				2FF7DFBB1CD4CA4D0015EC1A /* image6.jpg in Resources */,
+				2FF7DFAF1CD4CA4D0015EC1A /* image2.jpg in Resources */,
+				2FF7DFBE1CD4CA4D0015EC1A /* image7.jpg in Resources */,
+				2FF7DFB21CD4CA4D0015EC1A /* image3.jpg in Resources */,
+				2FF7DFA61CD4CA4D0015EC1A /* image1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +462,20 @@
 			files = (
 				2FF7DF441CD4AAAC0015EC1A /* AlbumViewController.swift in Sources */,
 				2FF7DF501CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
+				2FF7DF8E1CD4C9130015EC1A /* SKPhotoBrowser.swift in Sources */,
+				2FF7DF851CD4C9130015EC1A /* SKLocalPhoto.swift in Sources */,
+				2FF7DF7F1CD4C9130015EC1A /* SKDetectingView.swift in Sources */,
+				2FF7DF881CD4C9130015EC1A /* SKPhoto.swift in Sources */,
+				2FF7DF731CD4C9130015EC1A /* UIView+Radius.swift in Sources */,
+				2FF7DF791CD4C9130015EC1A /* SKCaptionView.swift in Sources */,
+				2FF7DF7C1CD4C9130015EC1A /* SKDetectingImageView.swift in Sources */,
+				2FF7DF821CD4C9130015EC1A /* SKIndicatorView.swift in Sources */,
 				2FF7DF481CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */,
 				2FF7DF141CD4A6150015EC1A /* AppDelegate.swift in Sources */,
 				2FF7DF581CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */,
+				2FF7DF701CD4C9130015EC1A /* UIImage+Rotation.swift in Sources */,
 				2FF7DF541CD4AB1C0015EC1A /* MapViewController.swift in Sources */,
+				2FF7DF911CD4C9130015EC1A /* SKZoomingScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,10 +485,20 @@
 			files = (
 				2FF7DF511CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
 				2FF7DF551CD4AB1C0015EC1A /* MapViewController.swift in Sources */,
+				2FF7DF8F1CD4C9130015EC1A /* SKPhotoBrowser.swift in Sources */,
+				2FF7DF861CD4C9130015EC1A /* SKLocalPhoto.swift in Sources */,
+				2FF7DF801CD4C9130015EC1A /* SKDetectingView.swift in Sources */,
+				2FF7DF891CD4C9130015EC1A /* SKPhoto.swift in Sources */,
+				2FF7DF741CD4C9130015EC1A /* UIView+Radius.swift in Sources */,
+				2FF7DF7A1CD4C9130015EC1A /* SKCaptionView.swift in Sources */,
+				2FF7DF7D1CD4C9130015EC1A /* SKDetectingImageView.swift in Sources */,
+				2FF7DF831CD4C9130015EC1A /* SKIndicatorView.swift in Sources */,
 				2FF7DF451CD4AAAC0015EC1A /* AlbumViewController.swift in Sources */,
 				2FF7DF2B1CD4A6150015EC1A /* iScopeTests.swift in Sources */,
 				2FF7DF591CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */,
+				2FF7DF711CD4C9130015EC1A /* UIImage+Rotation.swift in Sources */,
 				2FF7DF491CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */,
+				2FF7DF921CD4C9130015EC1A /* SKZoomingScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,10 +508,20 @@
 			files = (
 				2FF7DF521CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
 				2FF7DF561CD4AB1C0015EC1A /* MapViewController.swift in Sources */,
+				2FF7DF901CD4C9130015EC1A /* SKPhotoBrowser.swift in Sources */,
+				2FF7DF871CD4C9130015EC1A /* SKLocalPhoto.swift in Sources */,
+				2FF7DF811CD4C9130015EC1A /* SKDetectingView.swift in Sources */,
+				2FF7DF8A1CD4C9130015EC1A /* SKPhoto.swift in Sources */,
+				2FF7DF751CD4C9130015EC1A /* UIView+Radius.swift in Sources */,
+				2FF7DF7B1CD4C9130015EC1A /* SKCaptionView.swift in Sources */,
+				2FF7DF7E1CD4C9130015EC1A /* SKDetectingImageView.swift in Sources */,
+				2FF7DF841CD4C9130015EC1A /* SKIndicatorView.swift in Sources */,
 				2FF7DF461CD4AAAC0015EC1A /* AlbumViewController.swift in Sources */,
 				2FF7DF361CD4A6150015EC1A /* iScopeUITests.swift in Sources */,
 				2FF7DF5A1CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */,
+				2FF7DF721CD4C9130015EC1A /* UIImage+Rotation.swift in Sources */,
 				2FF7DF4A1CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */,
+				2FF7DF931CD4C9130015EC1A /* SKZoomingScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
