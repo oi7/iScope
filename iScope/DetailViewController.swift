@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, UINavigationControllerDelegate {
+class DetailViewController: UIViewController {
 
     // IBOutlets
     @IBOutlet weak var captionLabel: UILabel!
@@ -20,19 +20,17 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate {
     // MARK: - Clarifai Image Tagging
     
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var tagButton: UIBarButtonItem!
     
     private lazy var client : ClarifaiClient = ClarifaiClient(appID: clarifaiClientID, appSecret: clarifaiClientSecret)
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: AnyObject]) {
-        dismissViewControllerAnimated(true, completion: nil)
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            // The user picked an image. Send it to Clarifai for recognition.
-            exampleImageView.image = image
-            textView.text = "Recognizing..."
-            button.enabled = false
-            recognizeImage(image)
-        }
+    @IBAction func imageTagging(sender: AnyObject) {
+        textView.text = "Recognizing..."
+        recognizeImage(imageView.image)
+    }
+    
+    @IBAction func backToAlbum(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(true)
     }
     
     private func recognizeImage(image: UIImage!) {
@@ -56,13 +54,15 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate {
             } else {
                 self.textView.text = "Tags:\n" + results![0].tags.joinWithSeparator(", ")
             }
-            self.button.enabled = true
+            self.tagButton.enabled = true
         }
     }
     
     // Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBarHidden = true
 
         if let photo = photo {
          
@@ -73,6 +73,11 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate {
         }
         
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
+    }
 
     override func didReceiveMemoryWarning() {
 
@@ -80,18 +85,18 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate {
 
     }
     
-override func previewActionItems() -> [UIPreviewActionItem] {
-    
-    let likeAction = UIPreviewAction(title: "Like", style: .Default) { (action, viewController) -> Void in
-        print("You liked the photo")
+    override func previewActionItems() -> [UIPreviewActionItem] {
+        
+        let likeAction = UIPreviewAction(title: "Like", style: .Default) { (action, viewController) -> Void in
+            print("You liked the photo")
+        }
+        
+        let deleteAction = UIPreviewAction(title: "Delete", style: .Destructive) { (action, viewController) -> Void in
+            print("You deleted the photo")
+        }
+        
+        return [likeAction, deleteAction]
+        
     }
-    
-    let deleteAction = UIPreviewAction(title: "Delete", style: .Destructive) { (action, viewController) -> Void in
-        print("You deleted the photo")
-    }
-    
-    return [likeAction, deleteAction]
-    
-}
     
 }

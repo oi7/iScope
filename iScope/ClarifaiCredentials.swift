@@ -8,8 +8,8 @@
 
 import Foundation;
 
-let clarifaiClientID = "ToBB-_J3oFXY-jFs6PMkXVW7Oc8uXPYdh8b358LQ"
-let clarifaiClientSecret = "ZjZZJNutJxpHBgsP7csgY7IqKctyoBAEdGAEnhyz"
+let clarifaiClientID = "ENb4swQevB1oDlyG-mnytoZEM6Uuv9WE-Oy5WhGC"
+let clarifaiClientSecret = "YEQYfnq-bh2KZkRYnUfTsm5tUbk9BtSdduwCdFYr"
 
 @objc class Credentials : NSObject {
     class func clientID() -> String { return clarifaiClientID }
