@@ -8,12 +8,29 @@
 
 import UIKit
 
-class MicroscopeViewController: UIViewController {
+class MicroscopeViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    var picker = UIImagePickerController()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    //MARK: Picker Delegates
+    func imagePickerController(
+        picker: UIImagePickerController,
+        didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        UIImageWriteToSavedPhotosAlbum(chosenImage, self,nil, nil)
+    }
+    
+    //What to do if the image picker cancels.
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true,
+                                      completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
