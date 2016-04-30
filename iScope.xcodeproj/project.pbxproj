@@ -8,13 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2FF7DF141CD4A6150015EC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF131CD4A6150015EC1A /* AppDelegate.swift */; };
-		2FF7DF161CD4A6150015EC1A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF151CD4A6150015EC1A /* FirstViewController.swift */; };
-		2FF7DF181CD4A6150015EC1A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF171CD4A6150015EC1A /* SecondViewController.swift */; };
 		2FF7DF1B1CD4A6150015EC1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF191CD4A6150015EC1A /* Main.storyboard */; };
 		2FF7DF1D1CD4A6150015EC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF1C1CD4A6150015EC1A /* Assets.xcassets */; };
 		2FF7DF201CD4A6150015EC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF1E1CD4A6150015EC1A /* LaunchScreen.storyboard */; };
 		2FF7DF2B1CD4A6150015EC1A /* iScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF2A1CD4A6150015EC1A /* iScopeTests.swift */; };
 		2FF7DF361CD4A6150015EC1A /* iScopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF351CD4A6150015EC1A /* iScopeUITests.swift */; };
+		2FF7DF441CD4AAAC0015EC1A /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF431CD4AAAC0015EC1A /* AlbumViewController.swift */; };
+		2FF7DF451CD4AAAC0015EC1A /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF431CD4AAAC0015EC1A /* AlbumViewController.swift */; };
+		2FF7DF461CD4AAAC0015EC1A /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF431CD4AAAC0015EC1A /* AlbumViewController.swift */; };
+		2FF7DF481CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF471CD4AAC40015EC1A /* TelescopeViewController.swift */; };
+		2FF7DF491CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF471CD4AAC40015EC1A /* TelescopeViewController.swift */; };
+		2FF7DF4A1CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF471CD4AAC40015EC1A /* TelescopeViewController.swift */; };
+		2FF7DF501CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */; };
+		2FF7DF511CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */; };
+		2FF7DF521CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */; };
+		2FF7DF541CD4AB1C0015EC1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */; };
+		2FF7DF551CD4AB1C0015EC1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */; };
+		2FF7DF561CD4AB1C0015EC1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */; };
+		2FF7DF581CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */; };
+		2FF7DF591CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */; };
+		2FF7DF5A1CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +50,6 @@
 /* Begin PBXFileReference section */
 		2FF7DF101CD4A6150015EC1A /* iScope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iScope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF7DF131CD4A6150015EC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FF7DF151CD4A6150015EC1A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		2FF7DF171CD4A6150015EC1A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2FF7DF1A1CD4A6150015EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FF7DF1C1CD4A6150015EC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FF7DF1F1CD4A6150015EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,11 @@
 		2FF7DF311CD4A6150015EC1A /* iScopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iScopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF7DF351CD4A6150015EC1A /* iScopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iScopeUITests.swift; sourceTree = "<group>"; };
 		2FF7DF371CD4A6150015EC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF7DF431CD4AAAC0015EC1A /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		2FF7DF471CD4AAC40015EC1A /* TelescopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelescopeViewController.swift; sourceTree = "<group>"; };
+		2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicroscopeViewController.swift; sourceTree = "<group>"; };
+		2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroscopeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +116,11 @@
 			isa = PBXGroup;
 			children = (
 				2FF7DF131CD4A6150015EC1A /* AppDelegate.swift */,
-				2FF7DF151CD4A6150015EC1A /* FirstViewController.swift */,
-				2FF7DF171CD4A6150015EC1A /* SecondViewController.swift */,
+				2FF7DF431CD4AAAC0015EC1A /* AlbumViewController.swift */,
+				2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */,
+				2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */,
+				2FF7DF471CD4AAC40015EC1A /* TelescopeViewController.swift */,
+				2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */,
 				2FF7DF191CD4A6150015EC1A /* Main.storyboard */,
 				2FF7DF1C1CD4A6150015EC1A /* Assets.xcassets */,
 				2FF7DF1E1CD4A6150015EC1A /* LaunchScreen.storyboard */,
@@ -196,6 +215,7 @@
 				TargetAttributes = {
 					2FF7DF0F1CD4A6150015EC1A = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = B2JHQ8NB9B;
 					};
 					2FF7DF251CD4A6150015EC1A = {
 						CreatedOnToolsVersion = 7.3;
@@ -259,9 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF7DF181CD4A6150015EC1A /* SecondViewController.swift in Sources */,
+				2FF7DF441CD4AAAC0015EC1A /* AlbumViewController.swift in Sources */,
+				2FF7DF501CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
+				2FF7DF481CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */,
 				2FF7DF141CD4A6150015EC1A /* AppDelegate.swift in Sources */,
-				2FF7DF161CD4A6150015EC1A /* FirstViewController.swift in Sources */,
+				2FF7DF581CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */,
+				2FF7DF541CD4AB1C0015EC1A /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF7DF511CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
+				2FF7DF551CD4AB1C0015EC1A /* MapViewController.swift in Sources */,
+				2FF7DF451CD4AAAC0015EC1A /* AlbumViewController.swift in Sources */,
 				2FF7DF2B1CD4A6150015EC1A /* iScopeTests.swift in Sources */,
+				2FF7DF591CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */,
+				2FF7DF491CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF7DF521CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
+				2FF7DF561CD4AB1C0015EC1A /* MapViewController.swift in Sources */,
+				2FF7DF461CD4AAAC0015EC1A /* AlbumViewController.swift in Sources */,
 				2FF7DF361CD4A6150015EC1A /* iScopeUITests.swift in Sources */,
+				2FF7DF5A1CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */,
+				2FF7DF4A1CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,10 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iScope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oi7.iScope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -416,10 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iScope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oi7.iScope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
