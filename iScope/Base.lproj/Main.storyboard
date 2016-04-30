@@ -5,6 +5,35 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="wRT-ab-Wrp">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="Oan-Pq-Y5X" customClass="DetailViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wce-8H-jeH"/>
+                        <viewControllerLayoutGuide type="bottom" id="CKq-qS-Khb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lri-Hy-z4w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLO-y3-EPK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="co7-in-QFx">
+                                <rect key="frame" x="67" y="245" width="240" height="128"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfc-Oh-I98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1059.5" y="-0.5"/>
+        </scene>
         <!--Album-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -26,7 +55,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exampleCollectionViewCell" id="9Eb-ae-UXc" customClass="ExampleCollectionViewCell" customModule="iScope" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exampleCollectionViewCell" id="9Eb-ae-UXc" customClass="PhotoCollectionViewCell" customModule="iScope" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -46,7 +75,8 @@
                                             <constraint firstAttribute="trailing" secondItem="5wc-pu-eiA" secondAttribute="trailing" id="odG-KI-hTw"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="exampleImageView" destination="5wc-pu-eiA" id="ptO-jq-4hj"/>
+                                            <outlet property="imageView" destination="5wc-pu-eiA" id="88V-WS-Fmh"/>
+                                            <segue destination="Oan-Pq-Y5X" kind="show" identifier="sgPhotoDetail" id="qqn-uq-9js"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -56,7 +86,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Album" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="collectionView" destination="dzR-ze-jmh" id="MeR-U7-rHI"/>
+                        <outlet property="collectionView" destination="dzR-ze-jmh" id="FWi-Vr-c7r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -75,8 +105,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Microscope" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="83" y="312" width="209.5" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Microscope" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="95.5" y="312" width="184.5" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
