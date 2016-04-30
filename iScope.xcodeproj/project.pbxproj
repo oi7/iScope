@@ -97,6 +97,9 @@
 		2FF7DFC21CD4CA4D0015EC1A /* image9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DFA01CD4CA4D0015EC1A /* image9.jpg */; };
 		2FF7DFC31CD4CA4D0015EC1A /* image9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DFA01CD4CA4D0015EC1A /* image9.jpg */; };
 		2FF7DFC41CD4CA4D0015EC1A /* image9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DFA01CD4CA4D0015EC1A /* image9.jpg */; };
+		2FF7DFC61CD4D3300015EC1A /* ClarifaiCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DFC51CD4D3300015EC1A /* ClarifaiCredentials.swift */; };
+		2FF7DFC71CD4D3300015EC1A /* ClarifaiCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DFC51CD4D3300015EC1A /* ClarifaiCredentials.swift */; };
+		2FF7DFC81CD4D3300015EC1A /* ClarifaiCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DFC51CD4D3300015EC1A /* ClarifaiCredentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +161,7 @@
 		2FF7DF9E1CD4CA4D0015EC1A /* image7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image7.jpg; sourceTree = "<group>"; };
 		2FF7DF9F1CD4CA4D0015EC1A /* image8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image8.jpg; sourceTree = "<group>"; };
 		2FF7DFA01CD4CA4D0015EC1A /* image9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image9.jpg; sourceTree = "<group>"; };
+		2FF7DFC51CD4D3300015EC1A /* ClarifaiCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClarifaiCredentials.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +224,7 @@
 				2FF7DF1C1CD4A6150015EC1A /* Assets.xcassets */,
 				2FF7DF1E1CD4A6150015EC1A /* LaunchScreen.storyboard */,
 				2FF7DF211CD4A6150015EC1A /* Info.plist */,
+				2FF7DFC51CD4D3300015EC1A /* ClarifaiCredentials.swift */,
 			);
 			path = iScope;
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 				2FF7DF8E1CD4C9130015EC1A /* SKPhotoBrowser.swift in Sources */,
 				2FF7DF851CD4C9130015EC1A /* SKLocalPhoto.swift in Sources */,
 				2FF7DF7F1CD4C9130015EC1A /* SKDetectingView.swift in Sources */,
+				2FF7DFC61CD4D3300015EC1A /* ClarifaiCredentials.swift in Sources */,
 				2FF7DF881CD4C9130015EC1A /* SKPhoto.swift in Sources */,
 				2FF7DF731CD4C9130015EC1A /* UIView+Radius.swift in Sources */,
 				2FF7DF791CD4C9130015EC1A /* SKCaptionView.swift in Sources */,
@@ -488,6 +494,7 @@
 				2FF7DF8F1CD4C9130015EC1A /* SKPhotoBrowser.swift in Sources */,
 				2FF7DF861CD4C9130015EC1A /* SKLocalPhoto.swift in Sources */,
 				2FF7DF801CD4C9130015EC1A /* SKDetectingView.swift in Sources */,
+				2FF7DFC71CD4D3300015EC1A /* ClarifaiCredentials.swift in Sources */,
 				2FF7DF891CD4C9130015EC1A /* SKPhoto.swift in Sources */,
 				2FF7DF741CD4C9130015EC1A /* UIView+Radius.swift in Sources */,
 				2FF7DF7A1CD4C9130015EC1A /* SKCaptionView.swift in Sources */,
@@ -511,6 +518,7 @@
 				2FF7DF901CD4C9130015EC1A /* SKPhotoBrowser.swift in Sources */,
 				2FF7DF871CD4C9130015EC1A /* SKLocalPhoto.swift in Sources */,
 				2FF7DF811CD4C9130015EC1A /* SKDetectingView.swift in Sources */,
+				2FF7DFC81CD4D3300015EC1A /* ClarifaiCredentials.swift in Sources */,
 				2FF7DF8A1CD4C9130015EC1A /* SKPhoto.swift in Sources */,
 				2FF7DF751CD4C9130015EC1A /* UIView+Radius.swift in Sources */,
 				2FF7DF7B1CD4C9130015EC1A /* SKCaptionView.swift in Sources */,
