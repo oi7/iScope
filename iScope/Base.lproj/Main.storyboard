@@ -222,7 +222,7 @@
         <!--Map-->
         <scene sceneID="JBC-Jo-Fxh">
             <objects>
-                <viewController id="Rfj-vv-Z5w" customClass="MapViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="Rfj-vv-Z5w" customClass="MapViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s5L-xD-5Qe"/>
                         <viewControllerLayoutGuide type="bottom" id="1mC-mi-XTI"/>
@@ -231,21 +231,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Map" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="fNP-dD-wq0">
-                                <rect key="frame" x="152" y="313" width="71" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jvg-gr-djO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Rfj-vv-Z5w" id="hKc-EL-Rcb"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jvg-gr-djO" firstAttribute="top" secondItem="6WX-qn-kL3" secondAttribute="top" id="7rX-w5-89y"/>
+                            <constraint firstAttribute="bottom" secondItem="Jvg-gr-djO" secondAttribute="bottom" id="Iza-L2-Cob"/>
+                            <constraint firstAttribute="trailing" secondItem="Jvg-gr-djO" secondAttribute="trailing" id="OVp-uR-CwN"/>
+                            <constraint firstItem="Jvg-gr-djO" firstAttribute="leading" secondItem="6WX-qn-kL3" secondAttribute="leading" id="psj-JT-Qvy"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="first" id="97v-7s-kfx"/>
+                    <connections>
+                        <outlet property="mapView" destination="Jvg-gr-djO" id="PjF-ZG-Mop"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lid-rc-i84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658.5" y="789.5"/>
+            <point key="canvasLocation" x="1632.5" y="851.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
