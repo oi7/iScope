@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AssetsLibrary
 
 class CameraViewController: UIViewController {
     
@@ -102,12 +103,21 @@ class CameraViewController: UIViewController {
             let vc: ImageViewController? = self.storyboard?.instantiateViewControllerWithIdentifier("ImageVC") as? ImageViewController
             if let validVC: ImageViewController = vc {
                 if let capturedImage = image {
+                    capturedImage.saveToAlbum("Microscope")
+//                    self.saveImage(capturedImage, album: "Microscope")
+                    
                     validVC.image = capturedImage
                     self.navigationController?.pushViewController(validVC, animated: true)
                 }
             }
         })
     }
+    
+//    func saveImage(image:UIImage, album name:String) {
+//        let al = ALAssetsLibrary()
+//        
+//        al.saveImage(image, toAlbum: name, completion:nil, failure:nil)
+//    }
     
     @IBAction func askForCameraPermissions(sender: UIButton) {
         cameraManager.askUserForCameraPermissions({ permissionGranted in
@@ -119,5 +129,13 @@ class CameraViewController: UIViewController {
                 self.addCameraToView()
             }
         })
+    }
+}
+
+extension UIImage {
+    func saveToAlbum(name:String) {
+        let al = ALAssetsLibrary()
+        
+        al.saveImage(self, toAlbum: name, completion:nil, failure:nil)
     }
 }

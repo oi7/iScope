@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F1730C21CD6417000C067A5 /* KYShutterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1730C11CD6417000C067A5 /* KYShutterButton.swift */; };
+		2F1730C61CD6693B00C067A5 /* ALAssetsLibraryCustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1730C51CD6693B00C067A5 /* ALAssetsLibraryCustomPhotoAlbum.m */; };
+		2F1730C91CD66AC800C067A5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1730C81CD66AC800C067A5 /* AssetsLibrary.framework */; };
 		2FA31C721CD5A735004FB8E3 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C711CD5A735004FB8E3 /* CameraManager.swift */; };
 		2FA31C761CD5BA66004FB8E3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */; };
 		2FA31C7B1CD6146B004FB8E3 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C781CD6146B004FB8E3 /* CloseButton.swift */; };
@@ -107,7 +109,7 @@
 		2FF7E0471CD50D6F0015EC1A /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7E0441CD50D6F0015EC1A /* PhotoCollectionViewController.swift */; };
 		D13296011CD6233A00A2C288 /* CarbonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13296001CD6233A00A2C288 /* CarbonViewController.swift */; };
 		D13296031CD6258800A2C288 /* PresentCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13296021CD6258800A2C288 /* PresentCameraViewController.swift */; };
-		D13296051CD62CD500A2C288 /* ThetaCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13296041CD62CD500A2C288 /* ThetaCameraViewController.swift */; };
+		D13296051CD62CD500A2C288 /* SpheroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13296041CD62CD500A2C288 /* SpheroscopeViewController.swift */; };
 		D13296161CD62D6C00A2C288 /* HttpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D13296071CD62D6C00A2C288 /* HttpConnection.m */; };
 		D13296171CD62D6C00A2C288 /* HttpDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D13296091CD62D6C00A2C288 /* HttpDeviceInfo.m */; };
 		D13296181CD62D6C00A2C288 /* HttpFileList.m in Sources */ = {isa = PBXBuildFile; fileRef = D132960B1CD62D6C00A2C288 /* HttpFileList.m */; };
@@ -139,6 +141,9 @@
 
 /* Begin PBXFileReference section */
 		2F1730C11CD6417000C067A5 /* KYShutterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYShutterButton.swift; sourceTree = "<group>"; };
+		2F1730C41CD6693B00C067A5 /* ALAssetsLibraryCustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAssetsLibraryCustomPhotoAlbum.h; sourceTree = "<group>"; };
+		2F1730C51CD6693B00C067A5 /* ALAssetsLibraryCustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAssetsLibraryCustomPhotoAlbum.m; sourceTree = "<group>"; };
+		2F1730C81CD66AC800C067A5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		2FA31C6E1CD5A6A9004FB8E3 /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
 		2FA31C711CD5A735004FB8E3 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
@@ -218,7 +223,7 @@
 		2FF7E0441CD50D6F0015EC1A /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		D13296001CD6233A00A2C288 /* CarbonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarbonViewController.swift; sourceTree = "<group>"; };
 		D13296021CD6258800A2C288 /* PresentCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCameraViewController.swift; sourceTree = "<group>"; };
-		D13296041CD62CD500A2C288 /* ThetaCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThetaCameraViewController.swift; sourceTree = "<group>"; };
+		D13296041CD62CD500A2C288 /* SpheroscopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroscopeViewController.swift; sourceTree = "<group>"; };
 		D13296061CD62D6C00A2C288 /* HttpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpConnection.h; sourceTree = "<group>"; };
 		D13296071CD62D6C00A2C288 /* HttpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpConnection.m; sourceTree = "<group>"; };
 		D13296081CD62D6C00A2C288 /* HttpDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpDeviceInfo.h; sourceTree = "<group>"; };
@@ -244,6 +249,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1730C91CD66AC800C067A5 /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +276,15 @@
 				2F1730C11CD6417000C067A5 /* KYShutterButton.swift */,
 			);
 			name = CameraShutter;
+			sourceTree = "<group>";
+		};
+		2F1730C71CD6694400C067A5 /* ALAssetsLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				2F1730C41CD6693B00C067A5 /* ALAssetsLibraryCustomPhotoAlbum.h */,
+				2F1730C51CD6693B00C067A5 /* ALAssetsLibraryCustomPhotoAlbum.m */,
+			);
+			name = ALAssetsLibrary;
 			sourceTree = "<group>";
 		};
 		2FA31C6D1CD5A6A9004FB8E3 /* CameraManager */ = {
@@ -319,6 +334,8 @@
 		2FF7DF071CD4A6150015EC1A = {
 			isa = PBXGroup;
 			children = (
+				2F1730C81CD66AC800C067A5 /* AssetsLibrary.framework */,
+				2F1730C71CD6694400C067A5 /* ALAssetsLibrary */,
 				2F1730C31CD6417A00C067A5 /* CameraShutter */,
 				D132961E1CD62D7500A2C288 /* ThetaHttp */,
 				2FBCFF251CD62162006411FB /* CarbonKit */,
@@ -347,7 +364,7 @@
 		2FF7DF121CD4A6150015EC1A /* iScope */ = {
 			isa = PBXGroup;
 			children = (
-				D13296041CD62CD500A2C288 /* ThetaCameraViewController.swift */,
+				D13296041CD62CD500A2C288 /* SpheroscopeViewController.swift */,
 				2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */,
 				D13296001CD6233A00A2C288 /* CarbonViewController.swift */,
 				D13296021CD6258800A2C288 /* PresentCameraViewController.swift */,
@@ -625,7 +642,7 @@
 				2FF7DFFB1CD4DD900015EC1A /* AFHTTPRequestOperation.m in Sources */,
 				2FF7E0251CD4DD900015EC1A /* UIButton+AFNetworking.m in Sources */,
 				2FF7E01F1CD4DD900015EC1A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				D13296051CD62CD500A2C288 /* ThetaCameraViewController.swift in Sources */,
+				D13296051CD62CD500A2C288 /* SpheroscopeViewController.swift in Sources */,
 				2FA31C721CD5A735004FB8E3 /* CameraManager.swift in Sources */,
 				2FF7E02B1CD4DD900015EC1A /* UIProgressView+AFNetworking.m in Sources */,
 				D132961B1CD62D6C00A2C288 /* HttpStatusTimer.m in Sources */,
@@ -652,6 +669,7 @@
 				D132961C1CD62D6C00A2C288 /* HttpStorageInfo.m in Sources */,
 				D13296201CD637C600A2C288 /* MapDetailViewController.swift in Sources */,
 				D13296181CD62D6C00A2C288 /* HttpFileList.m in Sources */,
+				2F1730C61CD6693B00C067A5 /* ALAssetsLibraryCustomPhotoAlbum.m in Sources */,
 				2FF7E0131CD4DD900015EC1A /* AFURLSessionManager.m in Sources */,
 				D13296221CD63BA900A2C288 /* PhotoAnnotation.swift in Sources */,
 				2FF7E0101CD4DD900015EC1A /* AFURLResponseSerialization.m in Sources */,

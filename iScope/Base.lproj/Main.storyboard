@@ -166,7 +166,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUB-E7-tJ2" customClass="TagListView" customModule="iScope" customModuleProvider="target">
-                                <rect key="frame" x="17" y="252" width="340" height="113"/>
+                                <rect key="frame" x="17" y="230" width="340" height="113"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -306,32 +306,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kR8-BB-jcW">
-                            <size key="itemSize" width="320" height="240"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="kR8-BB-jcW">
+                            <size key="itemSize" width="125" height="125"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="Exv-AV-hsp" customClass="PhotoCollectionViewCell" customModule="iScope" customModuleProvider="target">
-                                <rect key="frame" x="27.5" y="0.0" width="320" height="240"/>
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cMJ-oO-0Bw">
-                                            <rect key="frame" x="5" y="5" width="310" height="230"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cMJ-oO-0Bw">
+                                            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="cMJ-oO-0Bw" secondAttribute="bottom" constant="5" id="IMi-3N-Nfg"/>
-                                    <constraint firstItem="cMJ-oO-0Bw" firstAttribute="top" secondItem="Exv-AV-hsp" secondAttribute="top" constant="5" id="RbU-Ob-0eo"/>
-                                    <constraint firstItem="cMJ-oO-0Bw" firstAttribute="leading" secondItem="Exv-AV-hsp" secondAttribute="leading" constant="5" id="UXN-t3-FjS"/>
-                                    <constraint firstAttribute="trailing" secondItem="cMJ-oO-0Bw" secondAttribute="trailing" constant="5" id="Z5i-uW-jKp"/>
+                                    <constraint firstAttribute="bottom" secondItem="cMJ-oO-0Bw" secondAttribute="bottom" id="IMi-3N-Nfg"/>
+                                    <constraint firstItem="cMJ-oO-0Bw" firstAttribute="top" secondItem="Exv-AV-hsp" secondAttribute="top" id="RbU-Ob-0eo"/>
+                                    <constraint firstItem="cMJ-oO-0Bw" firstAttribute="leading" secondItem="Exv-AV-hsp" secondAttribute="leading" id="UXN-t3-FjS"/>
+                                    <constraint firstAttribute="trailing" secondItem="cMJ-oO-0Bw" secondAttribute="trailing" id="Z5i-uW-jKp"/>
                                 </constraints>
+                                <size key="customSize" width="125" height="125"/>
                                 <connections>
                                     <outlet property="imageView" destination="cMJ-oO-0Bw" id="PpZ-eY-O7w"/>
                                     <segue destination="dd3-HD-Dmv" kind="show" identifier="sgPhotoDetail" id="Cvn-xB-NHb"/>
@@ -443,7 +444,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="imageView" destination="98a-Yz-ZRs" id="DtX-m3-uw6"/>
+                        <outlet property="imageView" destination="98a-Yz-ZRs" id="elr-2i-LF0"/>
                         <outlet property="overlayView" destination="9Ub-Ii-Iwz" id="M5S-cv-tZJ"/>
                         <outlet property="tagButton" destination="1Rb-MK-v84" id="Phh-fc-QdG"/>
                         <outlet property="taglistView" destination="zPO-zn-15o" id="f1G-Jd-JYH"/>
@@ -631,10 +632,10 @@
             </objects>
             <point key="canvasLocation" x="2590.5" y="789.5"/>
         </scene>
-        <!--Theta Camera View Controller-->
+        <!--Spheroscope View Controller-->
         <scene sceneID="puv-vF-bkS">
             <objects>
-                <viewController storyboardIdentifier="ThetaCameraViewController" id="nJj-mM-A74" customClass="ThetaCameraViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SpheroscopeViewController" id="nJj-mM-A74" customClass="SpheroscopeViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vao-wI-cdm"/>
                         <viewControllerLayoutGuide type="bottom" id="ua4-tU-VNA"/>

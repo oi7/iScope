@@ -2,8 +2,8 @@
 //  CarbonViewController.swift
 //  iScope
 //
-//  Created by 張 景隆 on 2016/5/1.
-//  Copyright © 2016年 oi7. All rights reserved.
+//  Created by Poseidon Ho on 4/30/16.
+//  Copyright © 2016 oi7. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,9 @@ extension CarbonViewController: CarbonTabSwipeNavigationDelegate {
                 case 0:
                     return self.storyboard!.instantiateViewControllerWithIdentifier("CameraViewController")
                 case 1:
-                    return self.storyboard!.instantiateViewControllerWithIdentifier("ThetaCameraViewController")
+                    return self.storyboard!.instantiateViewControllerWithIdentifier("SpheroscopeViewController")
+                case 2:
+                    return self.storyboard!.instantiateViewControllerWithIdentifier("TelescopeViewController")
                 default:
                     return UIViewController()
                 }
@@ -30,7 +32,7 @@ extension CarbonViewController: CarbonTabSwipeNavigationDelegate {
 
 class CarbonViewController: UIViewController {
     
-    var items = ["Microscope", "Theta 360"]
+    var items = ["Microscope", "Spheroscope", "Telescope"]
     var carbonTabSwipeNavigation: CarbonTabSwipeNavigation = CarbonTabSwipeNavigation()
 
     override func viewDidLoad() {
