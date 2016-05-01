@@ -96,10 +96,6 @@ class DetailViewController: UIViewController {
         if let a = asset {
             self.imageView.image = self.getAssetImage(a)
         }
-        
-//        toolbar.frame=CGRectMake(0, 0, 320, 60)
-//        toolbar.backgroundColor=(UIColor .blackColor())
-//        self.view.addSubview(toolbar)
     }
     
     func getAssetImage(asset: PHAsset) -> UIImage {

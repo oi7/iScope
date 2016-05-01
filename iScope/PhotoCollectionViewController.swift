@@ -14,7 +14,6 @@ class PhotoCollectionViewController: UICollectionViewController, UIViewControlle
     
     // Properties
     lazy var photos:[Photo] = {
-        
         return [
             Photo(imageName: "image1", city: "Boston"),
             Photo(imageName: "image2", city: "San Francisco"),
@@ -29,13 +28,13 @@ class PhotoCollectionViewController: UICollectionViewController, UIViewControlle
         super.viewDidLoad()
         if( traitCollection.forceTouchCapability == .Available){
             registerForPreviewingWithDelegate(self, sourceView: view)
-            
         }
-        
+
     }
     
     override func viewWillAppear(animated: Bool) {
         self.tabBarController?.tabBar.hidden = false
+        self.navigationController?.navigationBarHidden = false
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -54,14 +53,11 @@ class PhotoCollectionViewController: UICollectionViewController, UIViewControlle
     // MARK: UICollectionViewDataSource methods
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
-        
     }
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return photos.count
-        
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Microscope View Controller-->
@@ -314,7 +313,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="Exv-AV-hsp" customClass="PhotoCollectionViewCell" customModule="iScope" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                <rect key="frame" x="0.0" y="64" width="125" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
@@ -344,8 +343,7 @@
                             <outlet property="delegate" destination="2LQ-tr-lC2" id="AH3-XR-xKX"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Album" id="VKD-fk-Dhs"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationItem key="navigationItem" title="iScope" id="VKD-fk-Dhs"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvE-O7-5Gp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -463,13 +461,16 @@
         <!--iScope-->
         <scene sceneID="sek-bE-tvc">
             <objects>
-                <navigationController title="iScope" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="HX3-z7-3nI" sceneMemberID="viewController">
+                <navigationController title="iScope" automaticallyAdjustsScrollViewInsets="NO" id="HX3-z7-3nI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="album" id="Zad-2D-pVh"/>
                     <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hMd-fS-GMP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="hMd-fS-GMP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -477,103 +478,6 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYa-de-Xba" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHv-iQ-k8E">
-                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                    <color key="backgroundColor" red="0.54901963470000004" green="0.77647066119999997" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="0eO-EH-zWU"/>
-                        <constraint firstAttribute="width" constant="50" id="qTw-Om-lBc"/>
-                    </constraints>
-                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="25"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <view contentMode="scaleToFill" id="HLR-qp-Nig" userLabel="cameraView">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <color key="tintColor" red="0.54901963470000004" green="0.77647066119999997" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
-                </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap here to enable camera access and take great pictures" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lep-b8-5kL">
-                    <rect key="frame" x="0.0" y="0.0" width="592" height="512"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                    <color key="textColor" red="0.36078432199999999" green="0.36078432199999999" blue="0.36078432199999999" alpha="1" colorSpace="deviceRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cxx-ha-y3Y">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uej-Wf-raO">
-                            <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
-                            <color key="backgroundColor" red="0.67058825489999996" green="0.67058825489999996" blue="0.67058825489999996" alpha="0.69999999999999996" colorSpace="deviceRGB"/>
-                            <state key="normal" title="Flash off">
-                                <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sy2-Ea-CxD">
-                            <rect key="frame" x="150" y="0.0" width="150" height="60"/>
-                            <color key="backgroundColor" red="1" green="0.0" blue="0.46666669849999998" alpha="0.69999999999999996" colorSpace="deviceRGB"/>
-                            <state key="normal" title="Video">
-                                <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10J-rz-27O">
-                            <rect key="frame" x="300" y="0.0" width="150" height="60"/>
-                            <color key="backgroundColor" red="0.67058825489999996" green="0.67058825489999996" blue="0.67058825489999996" alpha="0.69999999999999996" colorSpace="deviceRGB"/>
-                            <state key="normal" title="Back">
-                                <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaB-Yx-JKh">
-                            <rect key="frame" x="450" y="0.0" width="150" height="60"/>
-                            <color key="backgroundColor" red="1" green="0.0" blue="0.46666669849999998" alpha="0.69999999999999996" colorSpace="deviceRGB"/>
-                            <state key="normal" title="High">
-                                <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="SaB-Yx-JKh" secondAttribute="bottom" id="0UD-dG-EZm"/>
-                        <constraint firstItem="Uej-Wf-raO" firstAttribute="top" secondItem="Cxx-ha-y3Y" secondAttribute="top" id="76A-jJ-8fo"/>
-                        <constraint firstItem="10J-rz-27O" firstAttribute="top" secondItem="Cxx-ha-y3Y" secondAttribute="top" id="A82-bq-PaS"/>
-                        <constraint firstItem="Uej-Wf-raO" firstAttribute="width" secondItem="Sy2-Ea-CxD" secondAttribute="width" id="APF-Op-bAC"/>
-                        <constraint firstItem="SaB-Yx-JKh" firstAttribute="top" secondItem="Cxx-ha-y3Y" secondAttribute="top" id="LCk-La-TFD"/>
-                        <constraint firstAttribute="height" constant="60" id="Lbo-AV-t29"/>
-                        <constraint firstAttribute="bottom" secondItem="10J-rz-27O" secondAttribute="bottom" id="YZ7-fl-VK9"/>
-                        <constraint firstItem="SaB-Yx-JKh" firstAttribute="leading" secondItem="10J-rz-27O" secondAttribute="trailing" id="bfT-40-EeK"/>
-                        <constraint firstItem="Sy2-Ea-CxD" firstAttribute="top" secondItem="Cxx-ha-y3Y" secondAttribute="top" id="clE-Sg-DaE"/>
-                        <constraint firstAttribute="bottom" secondItem="Uej-Wf-raO" secondAttribute="bottom" id="dQn-hc-apa"/>
-                        <constraint firstAttribute="bottom" secondItem="Sy2-Ea-CxD" secondAttribute="bottom" id="epO-BT-AnZ"/>
-                        <constraint firstItem="Uej-Wf-raO" firstAttribute="leading" secondItem="Cxx-ha-y3Y" secondAttribute="leading" id="fDg-r4-PMu"/>
-                        <constraint firstItem="Uej-Wf-raO" firstAttribute="width" secondItem="Cxx-ha-y3Y" secondAttribute="width" multiplier="1:4" id="jnE-rR-urC"/>
-                        <constraint firstItem="10J-rz-27O" firstAttribute="leading" secondItem="Sy2-Ea-CxD" secondAttribute="trailing" id="r04-VA-EDI"/>
-                        <constraint firstItem="10J-rz-27O" firstAttribute="width" secondItem="Sy2-Ea-CxD" secondAttribute="width" id="rIJ-Iq-mz3"/>
-                        <constraint firstItem="Sy2-Ea-CxD" firstAttribute="leading" secondItem="Uej-Wf-raO" secondAttribute="trailing" id="x4X-bW-dw9"/>
-                        <constraint firstAttribute="trailing" secondItem="SaB-Yx-JKh" secondAttribute="trailing" id="yMg-8m-H5T"/>
-                    </constraints>
-                </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SIs-fc-CNU">
-                    <rect key="frame" x="0.0" y="0.0" width="592" height="512"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="0.0" blue="0.46666669849999998" alpha="0.5" colorSpace="deviceRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                    <state key="normal">
-                        <color key="titleColor" red="0.36078432199999999" green="0.36078432199999999" blue="0.36078432199999999" alpha="1" colorSpace="deviceRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
             </objects>
             <point key="canvasLocation" x="1658.5" y="-803.5"/>
         </scene>
@@ -584,7 +488,7 @@
                     <tabBarItem key="tabBarItem" title="" image="camera" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NJy-de-W1X">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
