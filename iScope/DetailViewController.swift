@@ -26,10 +26,10 @@ class DetailViewController: UIViewController {
     
     @IBAction func imageTagging(sender: AnyObject) {
         if (textView.hidden == true){
-            self.taglistView.hidden = false
+            
             overlayView.hidden = false
             textView.hidden = false
-            
+            self.taglistView.hidden = false
             SwiftSpinner.show("Recognizing...")
             recognizeImage(imageView.image)
         }else{

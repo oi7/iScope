@@ -18,7 +18,6 @@ class ImageViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var retakeButton: UIButton!
     @IBOutlet weak var doneButton: UIButton!
-    @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var overlayView: UIView!
     
@@ -30,13 +29,9 @@ class ImageViewController: UIViewController {
         if let validImage = self.image {
             self.imageView.image = validImage
         }
-
-        textView.text = "Recognizing..."
+        SwiftSpinner.show("Recognizing...")
+        self.taglistView.textFont = UIFont.systemFontOfSize(18)
         recognizeImage(image)
-
-        
-        taglistView.addTag("AAA")
-        taglistView.addTag("BBB")
     }
     
     @IBAction func backToAlbum(sender: UIButton) {
@@ -88,11 +83,17 @@ class ImageViewController: UIViewController {
         // Send the JPEG to Clarifai for standard image tagging.
         client.recognizeJpegs([jpeg]) {
             (results: [ClarifaiResult]?, error: NSError?) in
+            
+            SwiftSpinner.hide()
+            
             if error != nil {
                 print("Error: \(error)\n")
                 self.textView.text = "Sorry, there was an error recognizing your image."
             } else {
-                self.textView.text = results![0].tags.joinWithSeparator(", ")
+                for tag in results![0].tags {
+                    self.taglistView.addTag(tag)
+                }
+
             }
             //            self.tagButton.enabled = true
         }
