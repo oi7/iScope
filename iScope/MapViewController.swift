@@ -92,14 +92,11 @@ class MapViewController: UIViewController {
     }
     
     func loadImage() {
-<<<<<<< HEAD
         if self.tabBarController?.selectedIndex != 2 {
             return
         }
-=======
         // clean annotaions
         self.mapView.removeAnnotations(self.mapView.annotations)
->>>>>>> 40ce59a13326fe51e8d638c8282e4cc78f3e08d2
         
         let options = PHFetchOptions()
         options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
