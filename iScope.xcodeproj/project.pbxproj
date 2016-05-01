@@ -11,6 +11,7 @@
 		2F1730C61CD6693B00C067A5 /* ALAssetsLibraryCustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1730C51CD6693B00C067A5 /* ALAssetsLibraryCustomPhotoAlbum.m */; };
 		2F1730C91CD66AC800C067A5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1730C81CD66AC800C067A5 /* AssetsLibrary.framework */; };
 		2F1730CB1CD66E4600C067A5 /* TelescopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1730CA1CD66E4600C067A5 /* TelescopeViewController.swift */; };
+		2F1730D11CD67C7C00C067A5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1730D01CD67C7C00C067A5 /* TabBarViewController.swift */; };
 		2FA31C721CD5A735004FB8E3 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C711CD5A735004FB8E3 /* CameraManager.swift */; };
 		2FA31C761CD5BA66004FB8E3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */; };
 		2FA31C7B1CD6146B004FB8E3 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C781CD6146B004FB8E3 /* CloseButton.swift */; };
@@ -146,6 +147,7 @@
 		2F1730C51CD6693B00C067A5 /* ALAssetsLibraryCustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAssetsLibraryCustomPhotoAlbum.m; sourceTree = "<group>"; };
 		2F1730C81CD66AC800C067A5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		2F1730CA1CD66E4600C067A5 /* TelescopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelescopeViewController.swift; sourceTree = "<group>"; };
+		2F1730D01CD67C7C00C067A5 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		2FA31C6E1CD5A6A9004FB8E3 /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
 		2FA31C711CD5A735004FB8E3 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
@@ -379,8 +381,9 @@
 				2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */,
 				2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */,
 				D13296211CD63BA900A2C288 /* PhotoAnnotation.swift */,
-				2FF7DF191CD4A6150015EC1A /* Main.storyboard */,
+				2F1730D01CD67C7C00C067A5 /* TabBarViewController.swift */,
 				D132961F1CD637C600A2C288 /* MapDetailViewController.swift */,
+				2FF7DF191CD4A6150015EC1A /* Main.storyboard */,
 				2FF7DF1C1CD4A6150015EC1A /* Assets.xcassets */,
 				2FF7DF1E1CD4A6150015EC1A /* LaunchScreen.storyboard */,
 				2FF7DF211CD4A6150015EC1A /* Info.plist */,
@@ -641,6 +644,7 @@
 				2FA31C7B1CD6146B004FB8E3 /* CloseButton.swift in Sources */,
 				2FF7DF501CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
 				2FF7E0071CD4DD900015EC1A /* AFSecurityPolicy.m in Sources */,
+				2F1730D11CD67C7C00C067A5 /* TabBarViewController.swift in Sources */,
 				2FF7DFFE1CD4DD900015EC1A /* AFHTTPRequestOperationManager.m in Sources */,
 				2FF7DFFB1CD4DD900015EC1A /* AFHTTPRequestOperation.m in Sources */,
 				2FF7E0251CD4DD900015EC1A /* UIButton+AFNetworking.m in Sources */,

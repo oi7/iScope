@@ -240,7 +240,7 @@
             </objects>
             <point key="canvasLocation" x="1173.5" y="851.5"/>
         </scene>
-        <!--Map-->
+        <!--Map View Controller-->
         <scene sceneID="JBC-Jo-Fxh">
             <objects>
                 <viewController storyboardIdentifier="MapViewController" id="Rfj-vv-Z5w" customClass="MapViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
@@ -267,7 +267,7 @@
                             <constraint firstItem="Jvg-gr-djO" firstAttribute="leading" secondItem="6WX-qn-kL3" secondAttribute="leading" id="psj-JT-Qvy"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="first" id="97v-7s-kfx"/>
+                    <tabBarItem key="tabBarItem" title="" image="map" id="97v-7s-kfx"/>
                     <connections>
                         <outlet property="mapView" destination="Jvg-gr-djO" id="PjF-ZG-Mop"/>
                         <segue destination="Q2U-Wr-Rvc" kind="presentation" identifier="toMapDetail" id="Woq-u3-Lo5"/>
@@ -277,16 +277,16 @@
             </objects>
             <point key="canvasLocation" x="1632.5" y="851.5"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController storyboardIdentifier="tabBarController" id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" id="49e-Tb-3d3" customClass="TabBarViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="HX3-z7-3nI" kind="relationship" relationship="viewControllers" id="kOp-hy-0Fm"/>
@@ -455,11 +455,11 @@
             </objects>
             <point key="canvasLocation" x="2518.5" y="-803.5"/>
         </scene>
-        <!--Album-->
+        <!--iScope-->
         <scene sceneID="sek-bE-tvc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="HX3-z7-3nI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Album" image="first" id="Zad-2D-pVh"/>
+                <navigationController title="iScope" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="HX3-z7-3nI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="album" id="Zad-2D-pVh"/>
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hMd-fS-GMP">
@@ -572,11 +572,11 @@
             </objects>
             <point key="canvasLocation" x="1658.5" y="-803.5"/>
         </scene>
-        <!--Camera-->
+        <!--Navigation Controller-->
         <scene sceneID="bFF-Nn-3Qr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="01D-iL-74W" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Camera" image="first" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="" image="camera" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NJy-de-W1X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -797,8 +797,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="album" width="25" height="25"/>
+        <image name="camera" width="25" height="25"/>
         <image name="cancel" width="50" height="50"/>
-        <image name="first" width="30" height="30"/>
         <image name="flash-off" width="50" height="50"/>
+        <image name="map" width="25" height="25"/>
     </resources>
 </document>
