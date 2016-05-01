@@ -23,6 +23,9 @@ class CameraViewController: UIViewController {
     static let conceptName: String? = nil
     static let conceptNamespace = "default"
     
+    @IBAction func doClose(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
@@ -53,6 +56,11 @@ class CameraViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.hidden = true
         self.tabBarController?.tabBar.hidden = true
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         cameraManager.resumeCaptureSession()
     }
     

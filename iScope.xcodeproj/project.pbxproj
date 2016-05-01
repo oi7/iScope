@@ -104,6 +104,8 @@
 		2FF7E0451CD50D6F0015EC1A /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7E0441CD50D6F0015EC1A /* PhotoCollectionViewController.swift */; };
 		2FF7E0461CD50D6F0015EC1A /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7E0441CD50D6F0015EC1A /* PhotoCollectionViewController.swift */; };
 		2FF7E0471CD50D6F0015EC1A /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7E0441CD50D6F0015EC1A /* PhotoCollectionViewController.swift */; };
+		D13296011CD6233A00A2C288 /* CarbonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13296001CD6233A00A2C288 /* CarbonViewController.swift */; };
+		D13296031CD6258800A2C288 /* PresentCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13296021CD6258800A2C288 /* PresentCameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +203,8 @@
 		2FF7E0381CD4E92A0015EC1A /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		2FF7E0391CD4E92A0015EC1A /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FF7E0441CD50D6F0015EC1A /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		D13296001CD6233A00A2C288 /* CarbonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarbonViewController.swift; sourceTree = "<group>"; };
+		D13296021CD6258800A2C288 /* PresentCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +305,8 @@
 		2FF7DF121CD4A6150015EC1A /* iScope */ = {
 			isa = PBXGroup;
 			children = (
+				D13296021CD6258800A2C288 /* PresentCameraViewController.swift */,
+				D13296001CD6233A00A2C288 /* CarbonViewController.swift */,
 				2FF7E0441CD50D6F0015EC1A /* PhotoCollectionViewController.swift */,
 				2FF7E0371CD4E92A0015EC1A /* DetailViewController.swift */,
 				2FF7E0381CD4E92A0015EC1A /* Photo.swift */,
@@ -476,7 +482,7 @@
 				TargetAttributes = {
 					2FF7DF0F1CD4A6150015EC1A = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = B2JHQ8NB9B;
+						DevelopmentTeam = 8HCJH9MU9S;
 					};
 					2FF7DF251CD4A6150015EC1A = {
 						CreatedOnToolsVersion = 7.3;
@@ -558,6 +564,7 @@
 				2FF7E0401CD4E92A0015EC1A /* PhotoCollectionViewCell.swift in Sources */,
 				2FF7E0191CD4DD900015EC1A /* README.md in Sources */,
 				2FF7E01C1CD4DD900015EC1A /* AFNetworkActivityIndicatorManager.m in Sources */,
+				D13296011CD6233A00A2C288 /* CarbonViewController.swift in Sources */,
 				2FF7E0221CD4DD900015EC1A /* UIAlertView+AFNetworking.m in Sources */,
 				2FA31C7C1CD6146B004FB8E3 /* TagListView.swift in Sources */,
 				2FF7E03A1CD4E92A0015EC1A /* DetailViewController.swift in Sources */,
@@ -567,6 +574,7 @@
 				2FF7E02E1CD4DD900015EC1A /* UIRefreshControl+AFNetworking.m in Sources */,
 				2FF7E00A1CD4DD900015EC1A /* AFURLConnectionOperation.m in Sources */,
 				2FF7E00D1CD4DD900015EC1A /* AFURLRequestSerialization.m in Sources */,
+				D13296031CD6258800A2C288 /* PresentCameraViewController.swift in Sources */,
 				2FF7E0131CD4DD900015EC1A /* AFURLSessionManager.m in Sources */,
 				2FF7E0101CD4DD900015EC1A /* AFURLResponseSerialization.m in Sources */,
 				2FBCFF211CD62153006411FB /* CarbonSwipeRefresh.m in Sources */,
