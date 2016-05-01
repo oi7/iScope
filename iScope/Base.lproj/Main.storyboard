@@ -7,10 +7,10 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Camera View Controller-->
+        <!--Microscope View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController storyboardIdentifier="CameraViewController" id="8rJ-Kc-sve" customClass="CameraViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MicroscopeViewController" id="8rJ-Kc-sve" customClass="MicroscopeViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>

@@ -1,5 +1,5 @@
 //
-//  CameraViewController.swift
+//  MicroscopeViewController.swift
 //  iScope
 //
 //  Created by Poseidon Ho on 4/30/16.
@@ -9,7 +9,7 @@
 import UIKit
 import AssetsLibrary
 
-class CameraViewController: UIViewController {
+class MicroscopeViewController: UIViewController {
     
     // MARK: - Constants for CameraManager
     let cameraManager = CameraManager()

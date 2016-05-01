@@ -2,8 +2,8 @@
 //  PresentCameraViewController.swift
 //  iScope
 //
-//  Created by 張 景隆 on 2016/5/1.
-//  Copyright © 2016年 oi7. All rights reserved.
+//  Created by Poseidon Ho on 4/30/16.
+//  Copyright © 2016 oi7. All rights reserved.
 //
 
 import UIKit

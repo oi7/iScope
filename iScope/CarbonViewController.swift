@@ -11,10 +11,9 @@ import UIKit
 extension CarbonViewController: CarbonTabSwipeNavigationDelegate {
     func carbonTabSwipeNavigation(carbonTabSwipeNavigation: CarbonTabSwipeNavigation, viewControllerAtIndex index: UInt) -> UIViewController {
         
-//        return self.storyboard!.instantiateViewControllerWithIdentifier("CameraViewController")
                 switch index {
                 case 0:
-                    return self.storyboard!.instantiateViewControllerWithIdentifier("CameraViewController")
+                    return self.storyboard!.instantiateViewControllerWithIdentifier("MicroscopeViewController")
                 case 1:
                     return self.storyboard!.instantiateViewControllerWithIdentifier("SpheroscopeViewController")
                 case 2:

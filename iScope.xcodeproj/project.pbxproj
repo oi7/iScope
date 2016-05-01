@@ -27,9 +27,9 @@
 		2FF7DF201CD4A6150015EC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF1E1CD4A6150015EC1A /* LaunchScreen.storyboard */; };
 		2FF7DF2B1CD4A6150015EC1A /* iScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF2A1CD4A6150015EC1A /* iScopeTests.swift */; };
 		2FF7DF361CD4A6150015EC1A /* iScopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF351CD4A6150015EC1A /* iScopeUITests.swift */; };
-		2FF7DF501CD4AAEC0015EC1A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */; };
-		2FF7DF511CD4AAEC0015EC1A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */; };
-		2FF7DF521CD4AAEC0015EC1A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */; };
+		2FF7DF501CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */; };
+		2FF7DF511CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */; };
+		2FF7DF521CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */; };
 		2FF7DF541CD4AB1C0015EC1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */; };
 		2FF7DF551CD4AB1C0015EC1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */; };
 		2FF7DF561CD4AB1C0015EC1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */; };
@@ -174,7 +174,7 @@
 		2FF7DF311CD4A6150015EC1A /* iScopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iScopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF7DF351CD4A6150015EC1A /* iScopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iScopeUITests.swift; sourceTree = "<group>"; };
 		2FF7DF371CD4A6150015EC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicroscopeViewController.swift; sourceTree = "<group>"; };
 		2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2FF7DFC51CD4D3300015EC1A /* ClarifaiCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClarifaiCredentials.swift; path = iScope/ClarifaiCredentials.swift; sourceTree = "<group>"; };
 		2FF7DFC91CD4DC6B0015EC1A /* ClarifaiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClarifaiClient.h; path = SKPhotoBrowser/SampleImages/ClarifaiClient.h; sourceTree = "<group>"; };
@@ -366,7 +366,7 @@
 		2FF7DF121CD4A6150015EC1A /* iScope */ = {
 			isa = PBXGroup;
 			children = (
-				2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */,
+				2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */,
 				D13296041CD62CD500A2C288 /* SpheroscopeViewController.swift */,
 				2F1730CA1CD66E4600C067A5 /* TelescopeViewController.swift */,
 				D13296001CD6233A00A2C288 /* CarbonViewController.swift */,
@@ -639,7 +639,7 @@
 			files = (
 				2FBCFF221CD62153006411FB /* CarbonTabSwipeNavigation.m in Sources */,
 				2FA31C7B1CD6146B004FB8E3 /* CloseButton.swift in Sources */,
-				2FF7DF501CD4AAEC0015EC1A /* CameraViewController.swift in Sources */,
+				2FF7DF501CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
 				2FF7E0071CD4DD900015EC1A /* AFSecurityPolicy.m in Sources */,
 				2FF7DFFE1CD4DD900015EC1A /* AFHTTPRequestOperationManager.m in Sources */,
 				2FF7DFFB1CD4DD900015EC1A /* AFHTTPRequestOperation.m in Sources */,
@@ -697,7 +697,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF7DF511CD4AAEC0015EC1A /* CameraViewController.swift in Sources */,
+				2FF7DF511CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
 				2FF7DF551CD4AB1C0015EC1A /* MapViewController.swift in Sources */,
 				2FF7E0081CD4DD900015EC1A /* AFSecurityPolicy.m in Sources */,
 				2FF7DFFF1CD4DD900015EC1A /* AFHTTPRequestOperationManager.m in Sources */,
@@ -731,7 +731,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF7DF521CD4AAEC0015EC1A /* CameraViewController.swift in Sources */,
+				2FF7DF521CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
 				2FF7DF561CD4AB1C0015EC1A /* MapViewController.swift in Sources */,
 				2FF7E0091CD4DD900015EC1A /* AFSecurityPolicy.m in Sources */,
 				2FF7E0001CD4DD900015EC1A /* AFHTTPRequestOperationManager.m in Sources */,
