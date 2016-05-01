@@ -600,6 +600,33 @@
             </objects>
             <point key="canvasLocation" x="2590.5" y="789.5"/>
         </scene>
+        <!--Theta Camera View Controller-->
+        <scene sceneID="puv-vF-bkS">
+            <objects>
+                <viewController storyboardIdentifier="ThetaCameraViewController" id="nJj-mM-A74" customClass="ThetaCameraViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vao-wI-cdm"/>
+                        <viewControllerLayoutGuide type="bottom" id="ua4-tU-VNA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bK6-pG-uun">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-GF-Mdz">
+                                <rect key="frame" x="0.0" y="50" width="375" height="240"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="motionJpegView" destination="4Mh-GF-Mdz" id="kQV-ft-hXy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDT-Sv-xKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3032.5" y="789.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Zg-eH-88g">
             <objects>

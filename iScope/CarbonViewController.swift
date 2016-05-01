@@ -11,15 +11,15 @@ import UIKit
 extension CarbonViewController: CarbonTabSwipeNavigationDelegate {
     func carbonTabSwipeNavigation(carbonTabSwipeNavigation: CarbonTabSwipeNavigation, viewControllerAtIndex index: UInt) -> UIViewController {
         
-        return self.storyboard!.instantiateViewControllerWithIdentifier("CameraViewController")
-        //        switch index {
-        //        case 0:
-        //            return self.storyboard!.instantiateViewControllerWithIdentifier("ViewControllerOne") as! ViewControllerOne
-        //        case 1:
-        //            return self.storyboard!.instantiateViewControllerWithIdentifier("ViewControllerTwo") as! ViewControllerTwo
-        //        default:
-        //            return self.storyboard!.instantiateViewControllerWithIdentifier("ViewControllerThree") as! ViewControllerThree
-        //        }
+//        return self.storyboard!.instantiateViewControllerWithIdentifier("CameraViewController")
+                switch index {
+                case 0:
+                    return self.storyboard!.instantiateViewControllerWithIdentifier("CameraViewController")
+                case 1:
+                    return self.storyboard!.instantiateViewControllerWithIdentifier("ThetaCameraViewController")
+                default:
+                    return UIViewController()
+                }
         
     }
     
@@ -30,7 +30,7 @@ extension CarbonViewController: CarbonTabSwipeNavigationDelegate {
 
 class CarbonViewController: UIViewController {
     
-    var items = ["Camera1", "Camera2"]
+    var items = ["Microscope", "Theta 360"]
     var carbonTabSwipeNavigation: CarbonTabSwipeNavigation = CarbonTabSwipeNavigation()
 
     override func viewDidLoad() {

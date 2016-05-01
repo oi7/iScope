@@ -4,3 +4,4 @@
 
 #import "ClarifaiClient.h"
 #import "CarbonKit.h"
+#import "HttpConnection.h"
