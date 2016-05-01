@@ -98,7 +98,4 @@ class ImageViewController: UIViewController {
             //            self.tagButton.enabled = true
         }
     }
-
-    
-
 }

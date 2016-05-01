@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1730C21CD6417000C067A5 /* KYShutterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1730C11CD6417000C067A5 /* KYShutterButton.swift */; };
 		2FA31C721CD5A735004FB8E3 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C711CD5A735004FB8E3 /* CameraManager.swift */; };
 		2FA31C761CD5BA66004FB8E3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */; };
 		2FA31C7B1CD6146B004FB8E3 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C781CD6146B004FB8E3 /* CloseButton.swift */; };
@@ -135,6 +136,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F1730C11CD6417000C067A5 /* KYShutterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYShutterButton.swift; sourceTree = "<group>"; };
 		2FA31C6E1CD5A6A9004FB8E3 /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
 		2FA31C711CD5A735004FB8E3 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
@@ -258,6 +260,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1730C31CD6417A00C067A5 /* CameraShutter */ = {
+			isa = PBXGroup;
+			children = (
+				2F1730C11CD6417000C067A5 /* KYShutterButton.swift */,
+			);
+			name = CameraShutter;
+			sourceTree = "<group>";
+		};
 		2FA31C6D1CD5A6A9004FB8E3 /* CameraManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +315,7 @@
 		2FF7DF071CD4A6150015EC1A = {
 			isa = PBXGroup;
 			children = (
+				2F1730C31CD6417A00C067A5 /* CameraShutter */,
 				D132961E1CD62D7500A2C288 /* ThetaHttp */,
 				2FBCFF251CD62162006411FB /* CarbonKit */,
 				2FA31C801CD617E9004FB8E3 /* SwiftSpinner */,
@@ -614,6 +625,7 @@
 				D132961B1CD62D6C00A2C288 /* HttpStatusTimer.m in Sources */,
 				2FF7DFC61CD4D3300015EC1A /* ClarifaiCredentials.swift in Sources */,
 				2FF7E03D1CD4E92A0015EC1A /* Photo.swift in Sources */,
+				2F1730C21CD6417000C067A5 /* KYShutterButton.swift in Sources */,
 				D13296191CD62D6C00A2C288 /* HttpImageInfo.m in Sources */,
 				2FF7E0401CD4E92A0015EC1A /* PhotoCollectionViewCell.swift in Sources */,
 				2FF7E0191CD4DD900015EC1A /* README.md in Sources */,

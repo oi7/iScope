@@ -58,7 +58,6 @@ class ThetaCameraViewController: UIViewController {
     }
     
     @IBAction func doConnect(sender: AnyObject) {
-        
         httpConnection.connect { (connected) in
             if connected {
                 self.httpConnection.startLiveView({ (frameData) in
@@ -70,5 +69,4 @@ class ThetaCameraViewController: UIViewController {
             }
         }
     }
-
 }

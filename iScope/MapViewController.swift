@@ -63,6 +63,10 @@ class MapViewController: UIViewController {
     }
     
     func loadImage() {
+        if self.tabBarController?.selectedIndex != 2 {
+            return
+        }
+        
         let options = PHFetchOptions()
         options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
         let assets: PHFetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: options)

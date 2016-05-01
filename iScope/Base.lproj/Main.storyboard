@@ -36,28 +36,6 @@
                                     <action selector="askForCameraPermissions:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="3vP-rR-Mbo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3e-g2-EW6" userLabel="captureButton">
-                                <rect key="frame" x="162" y="557" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.54901963470000004" green="0.77647066119999997" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="recordButtonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="bgL-Nd-55b"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap here to enable camera access and take great pictures" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMr-bf-yD1">
-                                <rect key="frame" x="0.0" y="304" width="375" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.36078432199999999" green="0.36078432199999999" blue="0.36078432199999999" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-M7-Nbf" userLabel="Close Button">
                                 <rect key="frame" x="59" y="567" width="30" height="30"/>
                                 <state key="normal" image="cancel">
@@ -77,6 +55,27 @@
                                     <action selector="changeFlashMode:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="tf6-95-D4z"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap here to enable camera access and take great pictures" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMr-bf-yD1">
+                                <rect key="frame" x="0.0" y="304" width="375" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.36078432199999999" green="0.36078432199999999" blue="0.36078432199999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Uu-hk-g8a" customClass="KYShutterButton" customModule="iScope" customModuleProvider="target">
+                                <rect key="frame" x="154" y="549" width="66" height="66"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="typeRaw">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="captureButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="9e5-Ve-NUl"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -95,7 +94,7 @@
                         <outlet property="askForPermissionsButton" destination="Mm6-wH-j6E" id="z4r-wx-JMa"/>
                         <outlet property="askForPermissionsLabel" destination="eMr-bf-yD1" id="G1n-Wu-rxD"/>
                         <outlet property="cameraView" destination="hpp-cF-1JW" id="HhX-fn-V7t"/>
-                        <outlet property="captureButton" destination="Q3e-g2-EW6" id="xM2-pr-BHW"/>
+                        <outlet property="captureButton" destination="6Uu-hk-g8a" id="ySR-7L-N9d"/>
                         <outlet property="doneButton" destination="buU-xW-aQp" id="0dc-Kt-itp"/>
                         <outlet property="flashModeButton" destination="cNE-UO-Pgc" id="E01-87-P84"/>
                     </connections>

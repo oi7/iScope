@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import CameraManager
 
 class CameraViewController: UIViewController {
     
@@ -56,7 +55,6 @@ class CameraViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.hidden = true
         self.tabBarController?.tabBar.hidden = true
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -99,33 +97,16 @@ class CameraViewController: UIViewController {
         }
     }
     
-    @IBAction func recordButtonTapped(sender: UIButton) {
-        
-        switch (cameraManager.cameraOutputMode) {
-        case .StillImage:
-            cameraManager.capturePictureWithCompletition({ (image, error) -> Void in
-                let vc: ImageViewController? = self.storyboard?.instantiateViewControllerWithIdentifier("ImageVC") as? ImageViewController
-                if let validVC: ImageViewController = vc {
-                    if let capturedImage = image {
-                        validVC.image = capturedImage
-                        self.navigationController?.pushViewController(validVC, animated: true)
-                    }
+    @IBAction func captureButton(sender: UIButton) {
+        cameraManager.capturePictureWithCompletition({ (image, error) -> Void in
+            let vc: ImageViewController? = self.storyboard?.instantiateViewControllerWithIdentifier("ImageVC") as? ImageViewController
+            if let validVC: ImageViewController = vc {
+                if let capturedImage = image {
+                    validVC.image = capturedImage
+                    self.navigationController?.pushViewController(validVC, animated: true)
                 }
-            })
-        case .VideoWithMic, .VideoOnly:
-            sender.selected = !sender.selected
-            sender.setTitle(" ", forState: UIControlState.Selected)
-            sender.backgroundColor = sender.selected ? UIColor.redColor() : UIColor.greenColor()
-            if sender.selected {
-                cameraManager.startRecordingVideo()
-            } else {
-                cameraManager.stopRecordingVideo({ (videoURL, error) -> Void in
-                    if let errorOccured = error {
-                        self.cameraManager.showErrorBlock(erTitle: "Error occurred", erMessage: errorOccured.localizedDescription)
-                    }
-                })
             }
-        }
+        })
     }
     
     @IBAction func askForCameraPermissions(sender: UIButton) {
@@ -139,5 +120,4 @@ class CameraViewController: UIViewController {
             }
         })
     }
-
 }
