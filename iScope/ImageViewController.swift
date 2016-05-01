@@ -1,19 +1,26 @@
 //
-//  SpheroscopeViewController.swift
+//  ImageViewController.swift
 //  iScope
 //
-//  Created by Poseidon Ho on 4/30/16.
+//  Created by Poseidon Ho on 5/1/16.
 //  Copyright © 2016 oi7. All rights reserved.
 //
 
 import UIKit
 
-class SpheroscopeViewController: UIViewController {
+class ImageViewController: UIViewController {
+    
+    var image: UIImage?
+    @IBOutlet weak var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.hidden = false
+        if let validImage = self.image {
+            self.imageView.image = validImage
+        }
+
     }
 
     override func didReceiveMemoryWarning() {

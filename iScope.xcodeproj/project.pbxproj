@@ -7,24 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FA31C721CD5A735004FB8E3 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C711CD5A735004FB8E3 /* CameraManager.swift */; };
+		2FA31C761CD5BA66004FB8E3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */; };
 		2FF7DF141CD4A6150015EC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF131CD4A6150015EC1A /* AppDelegate.swift */; };
 		2FF7DF1B1CD4A6150015EC1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF191CD4A6150015EC1A /* Main.storyboard */; };
 		2FF7DF1D1CD4A6150015EC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF1C1CD4A6150015EC1A /* Assets.xcassets */; };
 		2FF7DF201CD4A6150015EC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF1E1CD4A6150015EC1A /* LaunchScreen.storyboard */; };
 		2FF7DF2B1CD4A6150015EC1A /* iScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF2A1CD4A6150015EC1A /* iScopeTests.swift */; };
 		2FF7DF361CD4A6150015EC1A /* iScopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF351CD4A6150015EC1A /* iScopeUITests.swift */; };
-		2FF7DF481CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF471CD4AAC40015EC1A /* TelescopeViewController.swift */; };
-		2FF7DF491CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF471CD4AAC40015EC1A /* TelescopeViewController.swift */; };
-		2FF7DF4A1CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF471CD4AAC40015EC1A /* TelescopeViewController.swift */; };
-		2FF7DF501CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */; };
-		2FF7DF511CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */; };
-		2FF7DF521CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */; };
+		2FF7DF501CD4AAEC0015EC1A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */; };
+		2FF7DF511CD4AAEC0015EC1A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */; };
+		2FF7DF521CD4AAEC0015EC1A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */; };
 		2FF7DF541CD4AB1C0015EC1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */; };
 		2FF7DF551CD4AB1C0015EC1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */; };
 		2FF7DF561CD4AB1C0015EC1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */; };
-		2FF7DF581CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */; };
-		2FF7DF591CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */; };
-		2FF7DF5A1CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */; };
 		2FF7DFC61CD4D3300015EC1A /* ClarifaiCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DFC51CD4D3300015EC1A /* ClarifaiCredentials.swift */; };
 		2FF7DFC71CD4D3300015EC1A /* ClarifaiCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DFC51CD4D3300015EC1A /* ClarifaiCredentials.swift */; };
 		2FF7DFC81CD4D3300015EC1A /* ClarifaiCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DFC51CD4D3300015EC1A /* ClarifaiCredentials.swift */; };
@@ -120,6 +116,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FA31C6E1CD5A6A9004FB8E3 /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
+		2FA31C711CD5A735004FB8E3 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		2FF7DF101CD4A6150015EC1A /* iScope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iScope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF7DF131CD4A6150015EC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FF7DF1A1CD4A6150015EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,10 +131,8 @@
 		2FF7DF311CD4A6150015EC1A /* iScopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iScopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF7DF351CD4A6150015EC1A /* iScopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iScopeUITests.swift; sourceTree = "<group>"; };
 		2FF7DF371CD4A6150015EC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FF7DF471CD4AAC40015EC1A /* TelescopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelescopeViewController.swift; sourceTree = "<group>"; };
-		2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicroscopeViewController.swift; sourceTree = "<group>"; };
+		2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroscopeViewController.swift; sourceTree = "<group>"; };
 		2FF7DFC51CD4D3300015EC1A /* ClarifaiCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClarifaiCredentials.swift; path = iScope/ClarifaiCredentials.swift; sourceTree = "<group>"; };
 		2FF7DFC91CD4DC6B0015EC1A /* ClarifaiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClarifaiClient.h; path = SKPhotoBrowser/SampleImages/ClarifaiClient.h; sourceTree = "<group>"; };
 		2FF7DFCA1CD4DC910015EC1A /* iScope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iScope-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -210,9 +207,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FA31C6D1CD5A6A9004FB8E3 /* CameraManager */ = {
+			isa = PBXGroup;
+			children = (
+				2FA31C711CD5A735004FB8E3 /* CameraManager.swift */,
+				2FA31C6E1CD5A6A9004FB8E3 /* CameraManager.h */,
+			);
+			name = CameraManager;
+			path = iScope/CameraManager;
+			sourceTree = "<group>";
+		};
 		2FF7DF071CD4A6150015EC1A = {
 			isa = PBXGroup;
 			children = (
+				2FA31C6D1CD5A6A9004FB8E3 /* CameraManager */,
 				2FF7E0341CD4DE030015EC1A /* Clarifai */,
 				2FF7DFD11CD4DD900015EC1A /* AFNetworking */,
 				2FF7DF121CD4A6150015EC1A /* iScope */,
@@ -240,15 +248,14 @@
 				2FF7E0381CD4E92A0015EC1A /* Photo.swift */,
 				2FF7E0391CD4E92A0015EC1A /* PhotoCollectionViewCell.swift */,
 				2FF7DF131CD4A6150015EC1A /* AppDelegate.swift */,
-				2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */,
-				2FF7DF571CD4AC230015EC1A /* SpheroscopeViewController.swift */,
-				2FF7DF471CD4AAC40015EC1A /* TelescopeViewController.swift */,
+				2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */,
 				2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */,
 				2FF7DF191CD4A6150015EC1A /* Main.storyboard */,
 				2FF7DF1C1CD4A6150015EC1A /* Assets.xcassets */,
 				2FF7DF1E1CD4A6150015EC1A /* LaunchScreen.storyboard */,
 				2FF7DF211CD4A6150015EC1A /* Info.plist */,
 				2FF7DFCA1CD4DC910015EC1A /* iScope-Bridging-Header.h */,
+				2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */,
 			);
 			path = iScope;
 			sourceTree = "<group>";
@@ -478,12 +485,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF7DF501CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
+				2FF7DF501CD4AAEC0015EC1A /* CameraViewController.swift in Sources */,
 				2FF7E0071CD4DD900015EC1A /* AFSecurityPolicy.m in Sources */,
 				2FF7DFFE1CD4DD900015EC1A /* AFHTTPRequestOperationManager.m in Sources */,
 				2FF7DFFB1CD4DD900015EC1A /* AFHTTPRequestOperation.m in Sources */,
 				2FF7E0251CD4DD900015EC1A /* UIButton+AFNetworking.m in Sources */,
 				2FF7E01F1CD4DD900015EC1A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				2FA31C721CD5A735004FB8E3 /* CameraManager.swift in Sources */,
 				2FF7E02B1CD4DD900015EC1A /* UIProgressView+AFNetworking.m in Sources */,
 				2FF7DFC61CD4D3300015EC1A /* ClarifaiCredentials.swift in Sources */,
 				2FF7E03D1CD4E92A0015EC1A /* Photo.swift in Sources */,
@@ -494,7 +502,6 @@
 				2FF7E03A1CD4E92A0015EC1A /* DetailViewController.swift in Sources */,
 				2FF7E0011CD4DD900015EC1A /* AFHTTPSessionManager.m in Sources */,
 				2FF7E0311CD4DD900015EC1A /* UIWebView+AFNetworking.m in Sources */,
-				2FF7DF481CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */,
 				2FF7E02E1CD4DD900015EC1A /* UIRefreshControl+AFNetworking.m in Sources */,
 				2FF7E00A1CD4DD900015EC1A /* AFURLConnectionOperation.m in Sources */,
 				2FF7E00D1CD4DD900015EC1A /* AFURLRequestSerialization.m in Sources */,
@@ -502,11 +509,11 @@
 				2FF7E0101CD4DD900015EC1A /* AFURLResponseSerialization.m in Sources */,
 				2FF7DF141CD4A6150015EC1A /* AppDelegate.swift in Sources */,
 				2FF7DFCE1CD4DC920015EC1A /* ClarifaiClient.m in Sources */,
-				2FF7DF581CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */,
 				2FF7E0451CD50D6F0015EC1A /* PhotoCollectionViewController.swift in Sources */,
 				2FF7DF541CD4AB1C0015EC1A /* MapViewController.swift in Sources */,
 				2FF7E0041CD4DD900015EC1A /* AFNetworkReachabilityManager.m in Sources */,
 				2FF7E0281CD4DD900015EC1A /* UIImageView+AFNetworking.m in Sources */,
+				2FA31C761CD5BA66004FB8E3 /* ImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF7DF511CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
+				2FF7DF511CD4AAEC0015EC1A /* CameraViewController.swift in Sources */,
 				2FF7DF551CD4AB1C0015EC1A /* MapViewController.swift in Sources */,
 				2FF7E0081CD4DD900015EC1A /* AFSecurityPolicy.m in Sources */,
 				2FF7DFFF1CD4DD900015EC1A /* AFHTTPRequestOperationManager.m in Sources */,
@@ -538,9 +545,7 @@
 				2FF7E0111CD4DD900015EC1A /* AFURLResponseSerialization.m in Sources */,
 				2FF7DF2B1CD4A6150015EC1A /* iScopeTests.swift in Sources */,
 				2FF7DFCF1CD4DC920015EC1A /* ClarifaiClient.m in Sources */,
-				2FF7DF591CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */,
 				2FF7E0461CD50D6F0015EC1A /* PhotoCollectionViewController.swift in Sources */,
-				2FF7DF491CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */,
 				2FF7E0051CD4DD900015EC1A /* AFNetworkReachabilityManager.m in Sources */,
 				2FF7E0291CD4DD900015EC1A /* UIImageView+AFNetworking.m in Sources */,
 			);
@@ -550,7 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF7DF521CD4AAEC0015EC1A /* MicroscopeViewController.swift in Sources */,
+				2FF7DF521CD4AAEC0015EC1A /* CameraViewController.swift in Sources */,
 				2FF7DF561CD4AB1C0015EC1A /* MapViewController.swift in Sources */,
 				2FF7E0091CD4DD900015EC1A /* AFSecurityPolicy.m in Sources */,
 				2FF7E0001CD4DD900015EC1A /* AFHTTPRequestOperationManager.m in Sources */,
@@ -574,9 +579,7 @@
 				2FF7E0121CD4DD900015EC1A /* AFURLResponseSerialization.m in Sources */,
 				2FF7DF361CD4A6150015EC1A /* iScopeUITests.swift in Sources */,
 				2FF7DFD01CD4DC920015EC1A /* ClarifaiClient.m in Sources */,
-				2FF7DF5A1CD4AC230015EC1A /* SpheroscopeViewController.swift in Sources */,
 				2FF7E0471CD50D6F0015EC1A /* PhotoCollectionViewController.swift in Sources */,
-				2FF7DF4A1CD4AAC40015EC1A /* TelescopeViewController.swift in Sources */,
 				2FF7E0061CD4DD900015EC1A /* AFNetworkReachabilityManager.m in Sources */,
 				2FF7E02A1CD4DD900015EC1A /* UIImageView+AFNetworking.m in Sources */,
 			);
@@ -709,6 +712,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iScope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oi7.iScope;
@@ -726,6 +733,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iScope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oi7.iScope;
