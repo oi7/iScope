@@ -47,8 +47,8 @@ class CarbonViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
+        navigationController?.navigationBar.hidden = true
+        self.tabBarController?.tabBar.hidden = true
     }
     
     func style() {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -19,8 +19,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm6-wH-j6E" userLabel="askForPermissionsButton">
-                                <rect key="frame" x="0.0" y="0.0" width="30" height="45"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpp-cF-1JW" userLabel="cameraView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.54901963470000004" green="0.77647066119999997" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm6-wH-j6E" userLabel="askForPermissionsButton">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.46666669849999998" alpha="0.5" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal">
@@ -31,36 +36,29 @@
                                     <action selector="askForCameraPermissions:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="3vP-rR-Mbo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap here to enable camera access and take great pictures" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMr-bf-yD1">
-                                <rect key="frame" x="-21" y="318" width="640" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.36078432199999999" green="0.36078432199999999" blue="0.36078432199999999" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpp-cF-1JW" userLabel="cameraView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" red="0.54901963470000004" green="0.77647066119999997" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4zq-1x-Pia" userLabel="beforeCaptureView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNE-UO-Pgc">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
-                                        <color key="backgroundColor" red="0.67058825489999996" green="0.67058825489999996" blue="0.67058825489999996" alpha="0.69999999999999996" colorSpace="deviceRGB"/>
-                                        <state key="normal" title="Flash off">
-                                            <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="changeFlashMode:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="tf6-95-D4z"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3e-g2-EW6" userLabel="captureButton">
-                                <rect key="frame" x="169" y="607" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-M7-Nbf" userLabel="Close Button">
+                                <rect key="frame" x="62" y="557" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doClose:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="8Ut-Ue-FTI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNE-UO-Pgc">
+                                <rect key="frame" x="262" y="557" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Flash">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFlashMode:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="tf6-95-D4z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3e-g2-EW6" userLabel="captureButton">
+                                <rect key="frame" x="162" y="557" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.54901963470000004" green="0.77647066119999997" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal">
@@ -75,33 +73,25 @@
                                     <action selector="recordButtonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="bgL-Nd-55b"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-M7-Nbf">
-                                <rect key="frame" x="161" y="560" width="46" height="30"/>
-                                <state key="normal" title="close"/>
-                                <connections>
-                                    <action selector="doClose:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="8Ut-Ue-FTI"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap here to enable camera access and take great pictures" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMr-bf-yD1">
+                                <rect key="frame" x="0.0" y="304" width="375" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.36078432199999999" green="0.36078432199999999" blue="0.36078432199999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="hpp-cF-1JW" secondAttribute="bottom" id="9MD-dr-hpZ"/>
                             <constraint firstItem="hpp-cF-1JW" firstAttribute="centerY" secondItem="eMr-bf-yD1" secondAttribute="centerY" id="F3f-il-LdV"/>
                             <constraint firstAttribute="trailing" secondItem="hpp-cF-1JW" secondAttribute="trailing" id="Fow-aC-WQC"/>
-                            <constraint firstItem="hpp-cF-1JW" firstAttribute="trailing" secondItem="4zq-1x-Pia" secondAttribute="trailing" id="Ini-vp-lK0"/>
-                            <constraint firstItem="L7p-HK-0SC" firstAttribute="top" secondItem="4zq-1x-Pia" secondAttribute="bottom" constant="14" id="PIa-cr-zz7"/>
                             <constraint firstItem="hpp-cF-1JW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="S2A-hO-05W"/>
-                            <constraint firstItem="hpp-cF-1JW" firstAttribute="top" secondItem="Mm6-wH-j6E" secondAttribute="top" id="ZC7-Lg-p8q"/>
-                            <constraint firstItem="hpp-cF-1JW" firstAttribute="leading" secondItem="Mm6-wH-j6E" secondAttribute="leading" id="Zo2-v1-Fh5"/>
-                            <constraint firstItem="hpp-cF-1JW" firstAttribute="leading" secondItem="4zq-1x-Pia" secondAttribute="leading" id="aFB-VS-VMN"/>
-                            <constraint firstItem="hpp-cF-1JW" firstAttribute="centerX" secondItem="Q3e-g2-EW6" secondAttribute="centerX" constant="2.5" id="aGX-az-Gpr"/>
                             <constraint firstItem="hpp-cF-1JW" firstAttribute="centerX" secondItem="eMr-bf-yD1" secondAttribute="centerX" id="dpp-MK-nEr"/>
                             <constraint firstItem="hpp-cF-1JW" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="h9h-lM-Zh1"/>
-                            <constraint firstItem="hpp-cF-1JW" firstAttribute="top" secondItem="4zq-1x-Pia" secondAttribute="top" id="l6e-ma-fNX"/>
-                            <constraint firstItem="hpp-cF-1JW" firstAttribute="centerY" secondItem="Q3e-g2-EW6" secondAttribute="centerY" constant="-289.5" id="t5G-U6-yjj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mQL-i5-eLg"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="askForPermissionsButton" destination="Mm6-wH-j6E" id="z4r-wx-JMa"/>
@@ -574,11 +564,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="iEi-O3-WPc"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0v-yF-4Fk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2181.5" y="-0.5"/>
+            <point key="canvasLocation" x="2218.5" y="-0.5"/>
         </scene>
         <!--Carbon View Controller-->
         <scene sceneID="P8S-WH-i28">
