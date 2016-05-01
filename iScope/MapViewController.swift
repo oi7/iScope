@@ -59,7 +59,7 @@ class MapViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        PHPhotoLibrary.sharedPhotoLibrary().registerChangeObserver(self)
+//        PHPhotoLibrary.sharedPhotoLibrary().registerChangeObserver(self)
     }
     
 //    init() {

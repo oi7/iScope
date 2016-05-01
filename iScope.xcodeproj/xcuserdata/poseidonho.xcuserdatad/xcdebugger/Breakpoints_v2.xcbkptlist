@@ -6,48 +6,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iScope/MapViewController.swift"
-            timestampString = "483834692.954495"
+            filePath = "iScope/MicroscopeViewController.swift"
+            timestampString = "483838373.245759"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "loadImage()"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "captureButton(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iScope.MicroscopeViewController.captureButton (__ObjC.UIButton) -&gt; ()"
+                  moduleName = "iScope"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/poseidonho/Dropbox/WWDC16/iScope/iScope/MicroscopeViewController.swift"
+                  timestampString = "483837016.80454"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iScope.MicroscopeViewController.(captureButton (__ObjC.UIButton) -&gt; ()).(closure #1)"
+                  moduleName = "iScope"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/poseidonho/Dropbox/WWDC16/iScope/iScope/MicroscopeViewController.swift"
+                  timestampString = "483837016.804649"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iScope/MapViewController.swift"
-            timestampString = "483834517.171627"
+            filePath = "iScope/MicroscopeViewController.swift"
+            timestampString = "483838373.245759"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iScope/MapViewController.swift"
-            timestampString = "483834518.375635"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "viewWillAppear(_:)"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "captureButton(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

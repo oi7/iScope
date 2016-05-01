@@ -35,32 +35,13 @@
                                     <action selector="askForCameraPermissions:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="3vP-rR-Mbo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-M7-Nbf" userLabel="Close Button">
-                                <rect key="frame" x="59" y="567" width="30" height="30"/>
-                                <state key="normal" image="cancel">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="doClose:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="8Ut-Ue-FTI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNE-UO-Pgc">
-                                <rect key="frame" x="286" y="567" width="30" height="30"/>
-                                <state key="normal" image="flash-off">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeFlashMode:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="tf6-95-D4z"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap here to enable camera access and take great pictures" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMr-bf-yD1">
                                 <rect key="frame" x="0.0" y="304" width="375" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.36078432199999999" green="0.36078432199999999" blue="0.36078432199999999" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Uu-hk-g8a" customClass="KYShutterButton" customModule="iScope" customModuleProvider="target">
+                            <view tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Uu-hk-g8a" customClass="KYShutterButton" customModule="iScope" customModuleProvider="target">
                                 <rect key="frame" x="154" y="549" width="66" height="66"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
@@ -75,15 +56,49 @@
                                     <action selector="captureButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="9e5-Ve-NUl"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-M7-Nbf" userLabel="Close Button">
+                                <rect key="frame" x="59" y="580" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AFZ-WZ-geh"/>
+                                    <constraint firstAttribute="width" constant="30" id="Ob9-Kh-ENc"/>
+                                </constraints>
+                                <state key="normal" image="cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doClose:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="8Ut-Ue-FTI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNE-UO-Pgc">
+                                <rect key="frame" x="286" y="580" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="VaF-aE-Wly"/>
+                                </constraints>
+                                <state key="normal" image="flash-off">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFlashMode:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="tf6-95-D4z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jvD-M7-Nbf" firstAttribute="bottom" secondItem="cNE-UO-Pgc" secondAttribute="bottom" id="2wc-5v-qfd"/>
                             <constraint firstAttribute="bottom" secondItem="hpp-cF-1JW" secondAttribute="bottom" id="9MD-dr-hpZ"/>
+                            <constraint firstItem="6Uu-hk-g8a" firstAttribute="leading" secondItem="jvD-M7-Nbf" secondAttribute="trailing" constant="65" id="A5d-DB-RHf"/>
                             <constraint firstItem="hpp-cF-1JW" firstAttribute="centerY" secondItem="eMr-bf-yD1" secondAttribute="centerY" id="F3f-il-LdV"/>
                             <constraint firstAttribute="trailing" secondItem="hpp-cF-1JW" secondAttribute="trailing" id="Fow-aC-WQC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cNE-UO-Pgc" secondAttribute="trailing" constant="39" id="RN2-c0-YxW"/>
                             <constraint firstItem="hpp-cF-1JW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="S2A-hO-05W"/>
+                            <constraint firstItem="jvD-M7-Nbf" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="39" id="TKO-g4-g0B"/>
+                            <constraint firstItem="jvD-M7-Nbf" firstAttribute="top" secondItem="cNE-UO-Pgc" secondAttribute="top" id="Tu7-TP-CwW"/>
                             <constraint firstItem="hpp-cF-1JW" firstAttribute="centerX" secondItem="eMr-bf-yD1" secondAttribute="centerX" id="dpp-MK-nEr"/>
                             <constraint firstItem="hpp-cF-1JW" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="h9h-lM-Zh1"/>
+                            <constraint firstItem="jvD-M7-Nbf" firstAttribute="centerY" secondItem="6Uu-hk-g8a" secondAttribute="centerY" constant="13" id="tZh-D4-OiA"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="jvD-M7-Nbf" secondAttribute="bottom" constant="57" id="ti0-Rf-pYV"/>
+                            <constraint firstItem="cNE-UO-Pgc" firstAttribute="leading" secondItem="6Uu-hk-g8a" secondAttribute="trailing" constant="66" id="vO4-FR-zzd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mQL-i5-eLg"/>
@@ -100,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2738.5" y="-0.5"/>
+            <point key="canvasLocation" x="3550.5" y="-0.5"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="dXG-R0-rAZ">
@@ -165,7 +180,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUB-E7-tJ2" customClass="TagListView" customModule="iScope" customModuleProvider="target">
-                                <rect key="frame" x="17" y="230" width="340" height="113"/>
+                                <rect key="frame" x="17" y="252" width="340" height="113"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -203,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dY-ca-frC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3188.5" y="-0.5"/>
+            <point key="canvasLocation" x="4000.5" y="-0.5"/>
         </scene>
         <!--Map Detail View Controller-->
         <scene sceneID="aW3-Bv-s43">
@@ -237,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97n-om-oU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1173.5" y="851.5"/>
+            <point key="canvasLocation" x="697.5" y="845.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="JBC-Jo-Fxh">
@@ -274,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lid-rc-i84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632.5" y="851.5"/>
+            <point key="canvasLocation" x="1173.5" y="840.5"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -289,7 +304,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="HX3-z7-3nI" kind="relationship" relationship="viewControllers" id="kOp-hy-0Fm"/>
-                        <segue destination="01D-iL-74W" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="jLH-5o-GZn" kind="relationship" relationship="viewControllers" id="ob4-wD-wtp"/>
                         <segue destination="Rfj-vv-Z5w" kind="relationship" relationship="viewControllers" id="SBf-hT-yU7"/>
                     </connections>
                 </tabBarController>
@@ -487,6 +502,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="01D-iL-74W" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="camera" id="cPa-gy-q4n"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NJy-de-W1X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -703,6 +719,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQS-8S-m6B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2738.5" y="727.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FeY-Le-1F1">
+            <objects>
+                <navigationController storyboardIdentifier="cameraNavBar" automaticallyAdjustsScrollViewInsets="NO" id="jLH-5o-GZn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="camera" id="1f4-NV-db4"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ckc-p3-nHC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="1X4-cI-by6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQB-3K-wqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694.5" y="845.5"/>
         </scene>
     </scenes>
     <resources>

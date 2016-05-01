@@ -44,6 +44,7 @@ class ImageViewController: UIViewController {
     }
     
     @IBAction func shareButton(sender: UIButton) {
+
         let image = generateImage()
         
         let activity = UIActivityViewController(activityItems: [image], applicationActivities: nil)

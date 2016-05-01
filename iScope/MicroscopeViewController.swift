@@ -24,7 +24,9 @@ class MicroscopeViewController: UIViewController {
     static let conceptNamespace = "default"
     
     @IBAction func doClose(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        tabBarController?.selectedIndex = 0
+        navigationController?.popViewControllerAnimated(true)
+//        self.dismissViewControllerAnimated(true, completion: nil)
     }
     override func prefersStatusBarHidden() -> Bool {
         return true

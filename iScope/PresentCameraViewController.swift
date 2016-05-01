@@ -14,7 +14,7 @@ class PresentCameraViewController: UIViewController {
         super.viewWillAppear(animated)
         
 //        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CarbonViewControllerNav")
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("MicroscopeViewController")
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("cameraNavBar")
         
         self.tabBarController?.presentViewController(vc!, animated: true) {
             self.tabBarController?.selectedIndex = 0

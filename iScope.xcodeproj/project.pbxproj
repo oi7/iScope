@@ -369,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				2FF7DF131CD4A6150015EC1A /* AppDelegate.swift */,
+				2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */,
 				2FF7DF4F1CD4AAEC0015EC1A /* MicroscopeViewController.swift */,
 				D13296041CD62CD500A2C288 /* SpheroscopeViewController.swift */,
 				2F1730CA1CD66E4600C067A5 /* TelescopeViewController.swift */,
@@ -378,7 +379,6 @@
 				2FF7E0391CD4E92A0015EC1A /* PhotoCollectionViewCell.swift */,
 				2FF7E0371CD4E92A0015EC1A /* DetailViewController.swift */,
 				2FF7E0381CD4E92A0015EC1A /* Photo.swift */,
-				2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */,
 				2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */,
 				D13296211CD63BA900A2C288 /* PhotoAnnotation.swift */,
 				2F1730D01CD67C7C00C067A5 /* TabBarViewController.swift */,
@@ -900,7 +900,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oi7.iScope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "33464033-fdc5-40c9-98b4-8f4dc3054ba5";
 				SWIFT_OBJC_BRIDGING_HEADER = "iScope/iScope-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -921,7 +921,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oi7.iScope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "33464033-fdc5-40c9-98b4-8f4dc3054ba5";
 				SWIFT_OBJC_BRIDGING_HEADER = "iScope/iScope-Bridging-Header.h";
 			};
 			name = Release;

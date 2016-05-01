@@ -64,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             break
         }
         
-        // Construct an alert using the details of the shortcut used to open the application.
+//         Construct an alert using the details of the shortcut used to open the application.
         let alertController = UIAlertController(title: "Shortcut Handled", message: "\"\(shortcutItem.localizedTitle)\"", preferredStyle: .Alert)
         let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
         alertController.addAction(okAction)
