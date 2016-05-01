@@ -13,6 +13,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+        self.tabBar.backgroundColor = UIColor.blackColor()
         self.title = nil;
     }
 
