@@ -11,7 +11,6 @@ import UIKit
 class DetailViewController: UIViewController {
 
     // IBOutlets
-    @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
     // Properties
@@ -67,7 +66,6 @@ class DetailViewController: UIViewController {
         if let photo = photo {
          
             imageView.image = UIImage(named: photo.imageName)
-            captionLabel.text = photo.caption
             
             title = photo.city
         }
