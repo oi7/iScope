@@ -13,7 +13,8 @@ class PresentCameraViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CarbonViewControllerNav")
+//        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CarbonViewControllerNav")
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("MicroscopeViewController")
         
         self.tabBarController?.presentViewController(vc!, animated: true) {
             self.tabBarController?.selectedIndex = 0

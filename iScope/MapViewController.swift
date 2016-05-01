@@ -73,6 +73,11 @@ class MapViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
         loadImage()
     }
 
@@ -92,9 +97,11 @@ class MapViewController: UIViewController {
     }
     
     func loadImage() {
-        if self.tabBarController?.selectedIndex != 2 {
-            return
-        }
+//        if self.tabBarController?.selectedIndex != 2 {
+//            return
+//        }
+        
+        
         // clean annotaions
         self.mapView.removeAnnotations(self.mapView.annotations)
         
