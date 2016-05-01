@@ -28,6 +28,10 @@ class MicroscopeViewController: UIViewController, UIImagePickerControllerDelegat
         picker.delegate = self
         self.presentViewController(picker, animated: true, completion: nil)
     }
+    
+    @IBAction func backToAlbum(sender: UIButton) {
+        tabBarController?.selectedIndex = 0
+    }
 
     @IBAction func shareButton(sender: UIButton) {
         let image = generateImage()
