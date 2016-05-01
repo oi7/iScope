@@ -219,6 +219,40 @@
             </objects>
             <point key="canvasLocation" x="3188.5" y="-0.5"/>
         </scene>
+        <!--Map Detail View Controller-->
+        <scene sceneID="aW3-Bv-s43">
+            <objects>
+                <viewController storyboardIdentifier="MapDetailViewController" id="Q2U-Wr-Rvc" customClass="MapDetailViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hex-WT-eEa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q0R-IL-mDu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9MF-Pm-wYm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fn5-r1-o9M">
+                                <rect key="frame" x="7" y="7" width="46" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="doClose:" destination="Q2U-Wr-Rvc" eventType="touchUpInside" id="Z9i-dT-kae"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rYx-vM-ORl">
+                                <rect key="frame" x="0.0" y="99" width="375" height="257"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="rYx-vM-ORl" id="CbS-yR-Gfo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97n-om-oU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.5" y="851.5"/>
+        </scene>
         <!--Map-->
         <scene sceneID="JBC-Jo-Fxh">
             <objects>
@@ -249,6 +283,7 @@
                     <tabBarItem key="tabBarItem" title="Map" image="first" id="97v-7s-kfx"/>
                     <connections>
                         <outlet property="mapView" destination="Jvg-gr-djO" id="PjF-ZG-Mop"/>
+                        <segue destination="Q2U-Wr-Rvc" kind="presentation" identifier="toMapDetail" id="Woq-u3-Lo5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lid-rc-i84" userLabel="First Responder" sceneMemberID="firstResponder"/>

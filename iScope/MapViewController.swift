@@ -24,18 +24,37 @@ extension MapViewController:MKMapViewDelegate {
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         //
         let annotationView = MKAnnotationView()
-        if let title = annotation.title, image = self.photoDict[title!] {
+        if let title = annotation.title, a = self.photoDict[title!] {
+            let image = self.getAssetThumbnail(a)
             annotationView.image = image.circle
         }
-        annotationView.canShowCallout = true
+        annotationView.canShowCallout = false
         return annotationView
+    }
+    
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        //
+        print("didSelectAnnotationView")
+        mapView.deselectAnnotation(view.annotation, animated: false)
+        
+        if let photoAnnotation = view.annotation as? PhotoAnnotation {
+//            print(photoAnnotation.asset)
+            
+//            self.performSegueWithIdentifier("toMapDetail", sender: photoAnnotation.asset)
+            
+            if let detailView = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as? DetailViewController {
+                detailView.asset = photoAnnotation.asset
+                
+                self.presentViewController(detailView, animated: true, completion: nil)
+            }
+        }
     }
 }
 
 class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
-    var photoDict = [String:UIImage]()
+    var photoDict = [String:PHAsset]()
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -62,7 +81,20 @@ class MapViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toMapDetail" {
+            if let mapDetail = segue.destinationViewController as? MapDetailViewController {
+                if let a = sender as? PHAsset {
+                    mapDetail.asset = a
+                }
+            }
+        }
+    }
+    
     func loadImage() {
+        // clean annotaions
+        self.mapView.removeAnnotations(self.mapView.annotations)
+        
         let options = PHFetchOptions()
         options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
         let assets: PHFetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: options)
@@ -73,12 +105,13 @@ class MapViewController: UIViewController {
                 
                 guard let coo = a.location?.coordinate else { return }
                 
-                let pointAnnotation = MKPointAnnotation()
-                pointAnnotation.coordinate = coo
-                pointAnnotation.title = "\(a.creationDate!.timeIntervalSince1970)"
-                self.photoDict["\(a.creationDate!.timeIntervalSince1970)"] = self.getAssetThumbnail(a)
+                let photoAnnotation = PhotoAnnotation()
+                photoAnnotation.asset = a
+                photoAnnotation.coordinate = coo
+                photoAnnotation.title = "\(a.creationDate!.timeIntervalSince1970)"
+                self.photoDict["\(a.creationDate!.timeIntervalSince1970)"] = a
                 
-                self.mapView.addAnnotation(pointAnnotation)
+                self.mapView.addAnnotation(photoAnnotation)
             }
         }
     }
