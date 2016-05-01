@@ -24,8 +24,13 @@ class DetailViewController: UIViewController {
     private lazy var client : ClarifaiClient = ClarifaiClient(appID: clarifaiClientID, appSecret: clarifaiClientSecret)
     
     @IBAction func imageTagging(sender: AnyObject) {
-        textView.text = "Recognizing..."
-        recognizeImage(imageView.image)
+        if (textView.hidden == true){
+            textView.hidden = false
+            textView.text = "Recognizing..."
+            recognizeImage(imageView.image)
+        }else{
+            textView.hidden = true
+        }
     }
     
     @IBAction func backToAlbum(sender: AnyObject) {
@@ -51,7 +56,7 @@ class DetailViewController: UIViewController {
                 print("Error: \(error)\n")
                 self.textView.text = "Sorry, there was an error recognizing your image."
             } else {
-                self.textView.text = "Tags:\n" + results![0].tags.joinWithSeparator(", ")
+                self.textView.text = results![0].tags.joinWithSeparator(", ")
             }
             self.tagButton.enabled = true
         }

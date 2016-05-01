@@ -243,6 +243,12 @@
                                     <constraint firstAttribute="width" constant="375" id="dzs-HP-rIC"/>
                                 </constraints>
                             </imageView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d3S-yB-eDy">
+                                <rect key="frame" x="0.0" y="223" width="375" height="183"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOK-ma-Zel">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
@@ -259,18 +265,12 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.20000000000000001" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d3S-yB-eDy">
-                                <rect key="frame" x="-4" y="223" width="391" height="183"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="98a-Yz-ZRs" firstAttribute="centerY" secondItem="y0x-kt-7wO" secondAttribute="centerY" constant="-19" id="4PA-D0-Eeu"/>
                             <constraint firstItem="98a-Yz-ZRs" firstAttribute="centerX" secondItem="y0x-kt-7wO" secondAttribute="centerX" id="BGf-T4-Gbs"/>
-                            <constraint firstItem="d3S-yB-eDy" firstAttribute="centerX" secondItem="aOK-ma-Zel" secondAttribute="centerX" constant="4" id="CrZ-xi-sjv"/>
+                            <constraint firstItem="d3S-yB-eDy" firstAttribute="centerX" secondItem="aOK-ma-Zel" secondAttribute="centerX" id="CrZ-xi-sjv"/>
                             <constraint firstItem="d3S-yB-eDy" firstAttribute="centerY" secondItem="98a-Yz-ZRs" secondAttribute="centerY" id="NSf-5e-tps"/>
                             <constraint firstItem="d3S-yB-eDy" firstAttribute="leading" secondItem="y0x-kt-7wO" secondAttribute="leadingMargin" constant="-20" id="PdD-Vq-2GS"/>
                             <constraint firstItem="98a-Yz-ZRs" firstAttribute="top" secondItem="y0x-kt-7wO" secondAttribute="topMargin" id="W4Q-OR-Gda"/>
