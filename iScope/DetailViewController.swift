@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Photos
 
 class DetailViewController: UIViewController {
+    var asset:PHAsset?
 
     @IBOutlet weak var taglistView: TagListView!
     // IBOutlets
@@ -40,7 +42,12 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func backToAlbum(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
+        if let _ = self.asset {
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        else {
+            navigationController?.popViewControllerAnimated(true)
+        }
     }
     
     private func recognizeImage(image: UIImage!) {
@@ -86,8 +93,26 @@ class DetailViewController: UIViewController {
             title = photo.city
         }
         
+        if let a = asset {
+            self.imageView.image = self.getAssetImage(a)
+        }
 
         
+    }
+    
+    func getAssetImage(asset: PHAsset) -> UIImage {
+        let manager = PHImageManager.defaultManager()
+        let option = PHImageRequestOptions()
+        var thumbnail = UIImage()
+        option.synchronous = true
+        
+        let screenSize: CGSize = UIScreen.mainScreen().bounds.size
+        let targetSize = CGSizeMake(screenSize.width, screenSize.height)
+        
+        manager.requestImageForAsset(asset, targetSize: targetSize, contentMode: .AspectFit, options: option, resultHandler: {(result, info)->Void in
+            thumbnail = result!
+        })
+        return thumbnail
     }
     
     override func viewWillAppear(animated: Bool) {
