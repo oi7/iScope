@@ -31,8 +31,8 @@
                                     <action selector="askForCameraPermissions:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="3vP-rR-Mbo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap here to enable camera access and take great pictures" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMr-bf-yD1">
-                                <rect key="frame" x="-133" y="319" width="640" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap here to enable camera access and take great pictures" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMr-bf-yD1">
+                                <rect key="frame" x="-21" y="318" width="640" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.36078432199999999" green="0.36078432199999999" blue="0.36078432199999999" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
@@ -42,7 +42,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.54901963470000004" green="0.77647066119999997" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zq-1x-Pia" userLabel="beforeCaptureView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4zq-1x-Pia" userLabel="beforeCaptureView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNE-UO-Pgc">
@@ -59,8 +59,8 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3e-g2-EW6" userLabel="captureButton">
-                                <rect key="frame" x="170" y="608" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3e-g2-EW6" userLabel="captureButton">
+                                <rect key="frame" x="169" y="607" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.54901963470000004" green="0.77647066119999997" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal">
@@ -95,6 +95,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mQL-i5-eLg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="askForPermissionsButton" destination="Mm6-wH-j6E" id="z4r-wx-JMa"/>
                         <outlet property="askForPermissionsLabel" destination="eMr-bf-yD1" id="G1n-Wu-rxD"/>
@@ -106,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2119.5" y="-0.5"/>
+            <point key="canvasLocation" x="2617.5" y="-0.5"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="dXG-R0-rAZ">
@@ -209,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dY-ca-frC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2574.5" y="-0.5"/>
+            <point key="canvasLocation" x="3057.5" y="-0.5"/>
         </scene>
         <!--Map-->
         <scene sceneID="JBC-Jo-Fxh">
@@ -227,7 +228,7 @@
                                 <rect key="frame" x="152" y="313" width="71" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -545,12 +546,32 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="hJ1-OO-8vO"/>
+                        <segue destination="1RA-17-DNm" kind="relationship" relationship="rootViewController" id="WQO-dU-XZc"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rld-yd-rxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658.5" y="-0.5"/>
+            <point key="canvasLocation" x="1733.5" y="-0.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="P8S-WH-i28">
+            <objects>
+                <viewController id="1RA-17-DNm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wKZ-t6-jDq"/>
+                        <viewControllerLayoutGuide type="bottom" id="6jc-2C-lwZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ozd-lx-T2A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e9l-mf-tXz"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v0I-32-l1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2185.5" y="-0.5"/>
         </scene>
     </scenes>
     <resources>
