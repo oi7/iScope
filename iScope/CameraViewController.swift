@@ -9,7 +9,7 @@
 import UIKit
 //import CameraManager
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CameraViewController: UIViewController {
     
     // MARK: - Constants for CameraManager
     let cameraManager = CameraManager()
@@ -22,84 +22,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     static let conceptName: String? = nil
     static let conceptNamespace = "default"
-    private lazy var client : ClarifaiClient =
-        ClarifaiClient(appID: clarifaiClientID, appSecret: clarifaiClientSecret)
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var shareButton: UIButton!
-    @IBOutlet weak var doneButton: UIButton!
-    @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var overlayView: UIView!
-    
-    @IBAction func backToAlbum(sender: UIButton) {
-        tabBarController?.selectedIndex = 0
-    }
-
-    @IBAction func shareButton(sender: UIButton) {
-        let image = generateImage()
-        
-        let activity = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-        
-        activity.completionWithItemsHandler = { (activityType: String?, completed: Bool, returnedItems: [AnyObject]?, activityError: NSError?) -> Void in
-            if completed {
-                activity.dismissViewControllerAnimated(true, completion: nil)
-                self.dismissViewControllerAnimated(true, completion: nil)
-            }
-        }
-        presentViewController(activity, animated: true, completion: nil)
-    }
-    
-    func generateImage() -> UIImage {
-        
-        UIGraphicsBeginImageContext(view.frame.size)
-        view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
-        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return image
-    }
-    
-    private func recognizeImage(image: UIImage!) {
-        textView.hidden = false
-        // Scale down the image. This step is optional. However, sending large images over the
-        // network is slow and does not significantly improve recognition performance.
-        let size = CGSizeMake(320, 320 * image.size.height / image.size.width)
-        UIGraphicsBeginImageContext(size)
-        image.drawInRect(CGRectMake(0, 0, size.width, size.height))
-        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        // Encode as a JPEG.
-        let jpeg = UIImageJPEGRepresentation(scaledImage, 0.9)!
-        
-        // Send the JPEG to Clarifai for standard image tagging.
-        client.recognizeJpegs([jpeg]) {
-            (results: [ClarifaiResult]?, error: NSError?) in
-            if error != nil {
-                print("Error: \(error)\n")
-                self.textView.text = "Sorry, there was an error recognizing your image."
-            } else {
-                self.textView.text = results![0].tags.joinWithSeparator(", ")
-            }
-//            self.tagButton.enabled = true
-        }
-    }
-
-    
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: AnyObject]) {
-        dismissViewControllerAnimated(true, completion: nil)
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            // The user picked an image. Send it Clarifai for recognition.
-            imageView.image = image
-            //            backgroundImageView.hidden = true
-            textView.text = "Recognizing..."
-            //            button.enabled = false
-            recognizeImage(image)
-        }
-    }
     
     override func prefersStatusBarHidden() -> Bool {
         return true
@@ -107,9 +29,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tabBarController?.tabBar.hidden = true
-        
         // MARK: - CameraManager
         cameraManager.showAccessPermissionPopupAutomatically = false
         
@@ -132,8 +51,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
         navigationController?.navigationBar.hidden = true
+        self.tabBarController?.tabBar.hidden = true
         cameraManager.resumeCaptureSession()
     }
     
@@ -197,21 +116,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         }
     }
     
-    @IBAction func outputModeButtonTapped(sender: UIButton) {
-        
-        cameraManager.cameraOutputMode = cameraManager.cameraOutputMode == CameraOutputMode.VideoWithMic ? CameraOutputMode.StillImage : CameraOutputMode.VideoWithMic
-        switch (cameraManager.cameraOutputMode) {
-        case .StillImage:
-            captureButton.selected = false
-            captureButton.backgroundColor = UIColor.greenColor()
-            sender.setTitle("Image", forState: UIControlState.Normal)
-        case .VideoWithMic, .VideoOnly:
-            sender.setTitle("Video", forState: UIControlState.Normal)
-        }
-    }
-    
     @IBAction func askForCameraPermissions(sender: UIButton) {
-        
         cameraManager.askUserForCameraPermissions({ permissionGranted in
             self.askForPermissionsButton.hidden = true
             self.askForPermissionsLabel.hidden = true

@@ -26,20 +26,16 @@ class PhotoCollectionViewController: UICollectionViewController, UIViewControlle
     
     // Lifecycle methods    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
         if( traitCollection.forceTouchCapability == .Available){
             registerForPreviewingWithDelegate(self, sourceView: view)
             
         }
         
     }
-
-    override func didReceiveMemoryWarning() {
-        
-        super.didReceiveMemoryWarning()
-        
+    
+    override func viewWillAppear(animated: Bool) {
+        self.tabBarController?.tabBar.hidden = false
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
