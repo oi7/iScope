@@ -104,7 +104,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="cle-eq-P2h" kind="relationship" relationship="viewControllers" id="LxJ-TN-WlV"/>
+                        <segue destination="HX3-z7-3nI" kind="relationship" relationship="viewControllers" id="kOp-hy-0Fm"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="dge-Kb-Cns" kind="relationship" relationship="viewControllers" id="ng8-pe-CBL"/>
                         <segue destination="FLY-zz-qIU" kind="relationship" relationship="viewControllers" id="Vt7-IR-j4Z"/>
@@ -187,7 +187,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="Exv-AV-hsp" customClass="PhotoCollectionViewCell" customModule="iScope" customModuleProvider="target">
-                                <rect key="frame" x="27.5" y="64" width="320" height="240"/>
+                                <rect key="frame" x="27.5" y="0.0" width="320" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
@@ -217,11 +217,12 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Album" id="VKD-fk-Dhs"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvE-O7-5Gp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2084.5" y="-1492.5"/>
+            <point key="canvasLocation" x="2125.5" y="-1489.5"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="pIT-m6-OaC">
@@ -315,26 +316,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cfe-Ww-lsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2487.5" y="-1497.5"/>
+            <point key="canvasLocation" x="2568.5" y="-1489.5"/>
         </scene>
         <!--Album-->
-        <scene sceneID="jtg-Gr-ElF">
+        <scene sceneID="sek-bE-tvc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cle-eq-P2h" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Album" image="first" id="IId-0i-wqI"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="HX3-z7-3nI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Album" image="first" id="Zad-2D-pVh"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NRn-GU-7UI">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hMd-fS-GMP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2LQ-tr-lC2" kind="relationship" relationship="rootViewController" id="92S-Ck-sgC"/>
+                        <segue destination="2LQ-tr-lC2" kind="relationship" relationship="rootViewController" id="Ckd-No-KKq"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vhx-u3-SST" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYa-de-Xba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658.5" y="-1492.5"/>
+            <point key="canvasLocation" x="1658.5" y="-1489.5"/>
         </scene>
     </scenes>
     <resources>
