@@ -69,7 +69,7 @@
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
-                                        <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -630,7 +630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0I-32-l1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2590.5" y="789.5"/>
+            <point key="canvasLocation" x="2518.5" y="1477.5"/>
         </scene>
         <!--Spheroscope View Controller-->
         <scene sceneID="puv-vF-bkS">
@@ -645,8 +645,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-GF-Mdz">
-                                <rect key="frame" x="0.0" y="50" width="375" height="240"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n3U-Sa-OwD" customClass="KYShutterButton" customModule="iScope" customModuleProvider="target">
+                                <rect key="frame" x="154" y="553" width="66" height="66"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="typeRaw">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JI-F6-cxk" userLabel="Close Button">
+                                <rect key="frame" x="70" y="571" width="30" height="30"/>
+                                <state key="normal" image="cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doClose:" destination="nJj-mM-A74" eventType="touchUpInside" id="6ZB-VV-h6J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -657,7 +678,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDT-Sv-xKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3032.5" y="789.5"/>
+            <point key="canvasLocation" x="2982.5" y="1477.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Zg-eH-88g">
@@ -676,7 +697,103 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uL-ey-E5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2130.5" y="789.5"/>
+            <point key="canvasLocation" x="2066.5" y="1477.5"/>
+        </scene>
+        <!--Telescope View Controller-->
+        <scene sceneID="mOe-9y-diA">
+            <objects>
+                <viewController storyboardIdentifier="TelescopeViewController" id="wrp-2R-sMv" customClass="TelescopeViewController" customModule="iScope" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A0H-St-gPA"/>
+                        <viewControllerLayoutGuide type="bottom" id="lvr-fe-W5b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xnB-ex-exO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZA-bN-rD1" userLabel="cameraView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.54901963470000004" green="0.77647066119999997" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp3-IL-6wj" userLabel="askForPermissionsButton">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.46666669849999998" alpha="0.5" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.36078432199999999" green="0.36078432199999999" blue="0.36078432199999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="askForCameraPermissions:" destination="wrp-2R-sMv" eventType="touchUpInside" id="RyM-hM-8U5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2M-Lw-cbA" userLabel="Close Button">
+                                <rect key="frame" x="59" y="567" width="30" height="30"/>
+                                <state key="normal" image="cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doClose:" destination="wrp-2R-sMv" eventType="touchUpInside" id="Q27-m6-Jws"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYJ-I2-kNZ">
+                                <rect key="frame" x="286" y="567" width="30" height="30"/>
+                                <state key="normal" image="flash-off">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFlashMode:" destination="wrp-2R-sMv" eventType="touchUpInside" id="SAW-vc-7bE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap here to enable camera access and take great pictures" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5G-SX-XR1">
+                                <rect key="frame" x="0.0" y="304" width="375" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.36078432199999999" green="0.36078432199999999" blue="0.36078432199999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fyD-mF-Iyu" customClass="KYShutterButton" customModule="iScope" customModuleProvider="target">
+                                <rect key="frame" x="154" y="549" width="66" height="66"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="typeRaw">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="captureButton:" destination="wrp-2R-sMv" eventType="touchUpInside" id="ZnG-Xs-gFz"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xZA-bN-rD1" secondAttribute="bottom" id="1Ac-sM-5wt"/>
+                            <constraint firstItem="xZA-bN-rD1" firstAttribute="top" secondItem="xnB-ex-exO" secondAttribute="top" id="Dqo-qS-JUC"/>
+                            <constraint firstAttribute="trailing" secondItem="xZA-bN-rD1" secondAttribute="trailing" id="Kkk-kP-Il8"/>
+                            <constraint firstItem="xZA-bN-rD1" firstAttribute="leading" secondItem="xnB-ex-exO" secondAttribute="leading" id="VL5-bN-yZ6"/>
+                            <constraint firstItem="xZA-bN-rD1" firstAttribute="centerX" secondItem="U5G-SX-XR1" secondAttribute="centerX" id="hrK-NL-V3A"/>
+                            <constraint firstItem="xZA-bN-rD1" firstAttribute="centerY" secondItem="U5G-SX-XR1" secondAttribute="centerY" id="pbe-iv-zGk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Ta-dk-4oP"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="askForPermissionsButton" destination="Lp3-IL-6wj" id="5JC-Bg-pP6"/>
+                        <outlet property="askForPermissionsLabel" destination="U5G-SX-XR1" id="tiG-6D-g70"/>
+                        <outlet property="cameraView" destination="xZA-bN-rD1" id="5n9-Tv-AGF"/>
+                        <outlet property="captureButton" destination="fyD-mF-Iyu" id="Eb3-Jd-7pG"/>
+                        <outlet property="doneButton" destination="buU-xW-aQp" id="rzu-Oz-6hk"/>
+                        <outlet property="flashModeButton" destination="hYJ-I2-kNZ" id="Q5I-lM-1tb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQS-8S-m6B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2738.5" y="727.5"/>
         </scene>
     </scenes>
     <resources>

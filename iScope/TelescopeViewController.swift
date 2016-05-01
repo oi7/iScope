@@ -1,19 +1,19 @@
 //
-//  CameraViewController.swift
+//  TelescopeViewController.swift
 //  iScope
 //
-//  Created by Poseidon Ho on 4/30/16.
+//  Created by Poseidon Ho on 5/1/16.
 //  Copyright © 2016 oi7. All rights reserved.
 //
 
 import UIKit
 import AssetsLibrary
 
-class CameraViewController: UIViewController {
-    
+class TelescopeViewController: UIViewController {
+
     // MARK: - Constants for CameraManager
     let cameraManager = CameraManager()
-    // MARK: - IBOutlets for CameraManager    
+    // MARK: - IBOutlets for CameraManager
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var captureButton: UIButton!
     @IBOutlet weak var flashModeButton: UIButton!
@@ -103,8 +103,7 @@ class CameraViewController: UIViewController {
             let vc: ImageViewController? = self.storyboard?.instantiateViewControllerWithIdentifier("ImageVC") as? ImageViewController
             if let validVC: ImageViewController = vc {
                 if let capturedImage = image {
-                    capturedImage.saveToAlbum("Microscope")
-//                    self.saveImage(capturedImage, album: "Microscope")
+                    capturedImage.saveToAlbum("Telescope")
                     
                     validVC.image = capturedImage
                     self.navigationController?.pushViewController(validVC, animated: true)
@@ -123,12 +122,5 @@ class CameraViewController: UIViewController {
                 self.addCameraToView()
             }
         })
-    }
-}
-
-extension UIImage {
-    func saveToAlbum(name:String) {
-        let al = ALAssetsLibrary()
-        al.saveImage(self, toAlbum: name, completion:nil, failure:nil)
     }
 }
