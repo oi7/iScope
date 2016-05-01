@@ -21,6 +21,7 @@ class DetailViewController: UIViewController {
     
     // MARK: - Clarifai Image Tagging
     
+    @IBOutlet weak var toolbar: UIToolbar!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var tagButton: UIBarButtonItem!
     @IBOutlet weak var overlayView: UIView!
@@ -89,15 +90,16 @@ class DetailViewController: UIViewController {
         if let photo = photo {
          
             imageView.image = UIImage(named: photo.imageName)
-            
             title = photo.city
         }
         
         if let a = asset {
             self.imageView.image = self.getAssetImage(a)
         }
-
         
+//        toolbar.frame=CGRectMake(0, 0, 320, 60)
+//        toolbar.backgroundColor=(UIColor .blackColor())
+//        self.view.addSubview(toolbar)
     }
     
     func getAssetImage(asset: PHAsset) -> UIImage {

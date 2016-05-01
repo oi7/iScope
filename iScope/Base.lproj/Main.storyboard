@@ -365,9 +365,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="98a-Yz-ZRs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="629"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="558"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="629" id="TQh-2j-aNg"/>
+                                    <constraint firstAttribute="height" constant="558" id="TQh-2j-aNg"/>
                                     <constraint firstAttribute="width" constant="375" id="dzs-HP-rIC"/>
                                 </constraints>
                             </imageView>
@@ -405,8 +405,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOK-ma-Zel">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="aOK-ma-Zel">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Nvy-ii-SxZ"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem systemItem="stop" id="GiZ-t8-hsc">
                                         <connections>
@@ -414,7 +418,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4Dq-sU-UDc"/>
-                                    <barButtonItem title="Tag" id="1Rb-MK-v84">
+                                    <barButtonItem image="tag" id="1Rb-MK-v84">
                                         <connections>
                                             <action selector="imageTagging:" destination="dd3-HD-Dmv" id="kOA-p4-jAJ"/>
                                         </connections>
@@ -424,15 +428,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="98a-Yz-ZRs" firstAttribute="centerY" secondItem="y0x-kt-7wO" secondAttribute="centerY" constant="-19" id="4PA-D0-Eeu"/>
+                            <constraint firstItem="98a-Yz-ZRs" firstAttribute="centerY" secondItem="y0x-kt-7wO" secondAttribute="centerY" constant="5.5" id="4PA-D0-Eeu"/>
                             <constraint firstItem="98a-Yz-ZRs" firstAttribute="centerX" secondItem="y0x-kt-7wO" secondAttribute="centerX" id="BGf-T4-Gbs"/>
                             <constraint firstItem="d3S-yB-eDy" firstAttribute="centerX" secondItem="aOK-ma-Zel" secondAttribute="centerX" id="CrZ-xi-sjv"/>
-                            <constraint firstItem="d3S-yB-eDy" firstAttribute="centerY" secondItem="98a-Yz-ZRs" secondAttribute="centerY" id="NSf-5e-tps"/>
+                            <constraint firstItem="d3S-yB-eDy" firstAttribute="centerY" secondItem="98a-Yz-ZRs" secondAttribute="centerY" constant="-24.5" id="NSf-5e-tps"/>
                             <constraint firstItem="d3S-yB-eDy" firstAttribute="leading" secondItem="y0x-kt-7wO" secondAttribute="leadingMargin" constant="-20" id="PdD-Vq-2GS"/>
                             <constraint firstItem="98a-Yz-ZRs" firstAttribute="top" secondItem="y0x-kt-7wO" secondAttribute="topMargin" id="W4Q-OR-Gda"/>
                             <constraint firstItem="aOK-ma-Zel" firstAttribute="leading" secondItem="98a-Yz-ZRs" secondAttribute="leading" id="X4Q-9a-CNu"/>
                             <constraint firstItem="d3S-yB-eDy" firstAttribute="top" secondItem="hI4-4c-YZf" secondAttribute="bottom" constant="203" id="Ycp-ar-CuJ"/>
-                            <constraint firstItem="aOK-ma-Zel" firstAttribute="top" secondItem="98a-Yz-ZRs" secondAttribute="top" id="xPC-eN-2L1"/>
+                            <constraint firstItem="aOK-ma-Zel" firstAttribute="top" secondItem="98a-Yz-ZRs" secondAttribute="top" constant="-60" id="xPC-eN-2L1"/>
                             <constraint firstItem="aOK-ma-Zel" firstAttribute="trailing" secondItem="98a-Yz-ZRs" secondAttribute="trailing" id="zPN-gz-JGN"/>
                         </constraints>
                         <variation key="default">
@@ -449,6 +453,7 @@
                         <outlet property="tagButton" destination="1Rb-MK-v84" id="Phh-fc-QdG"/>
                         <outlet property="taglistView" destination="zPO-zn-15o" id="f1G-Jd-JYH"/>
                         <outlet property="textView" destination="d3S-yB-eDy" id="90Q-8A-oWu"/>
+                        <outlet property="toolbar" destination="aOK-ma-Zel" id="hIl-ca-fUO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cfe-Ww-lsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -797,10 +802,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="album" width="25" height="25"/>
-        <image name="camera" width="25" height="25"/>
+        <image name="album" width="35" height="35"/>
+        <image name="camera" width="35" height="35"/>
         <image name="cancel" width="50" height="50"/>
         <image name="flash-off" width="50" height="50"/>
-        <image name="map" width="25" height="25"/>
+        <image name="map" width="35" height="35"/>
+        <image name="tag" width="35" height="35"/>
     </resources>
 </document>
