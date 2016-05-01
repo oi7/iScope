@@ -87,8 +87,12 @@ class CameraViewController: UIViewController {
     {
         switch (cameraManager.changeFlashMode()) {
         case .Off:
+            NSLog("Flash switch off")
+            sender.setImage(UIImage(named: "flash-off.png"), forState: UIControlState.Normal)
             sender.setTitle("Flash Off", forState: UIControlState.Normal)
         case .On:
+            NSLog("Flash switch on")
+            sender.setImage(UIImage(named: "flash-on.png"), forState: UIControlState.Normal)
             sender.setTitle("Flash On", forState: UIControlState.Normal)
         case .Auto:
             sender.setTitle("Flash Auto", forState: UIControlState.Normal)
