@@ -54,6 +54,7 @@ class CarbonViewController: UIViewController {
     
     func style() {
         var color: UIColor = UIColor(red: 24.0 / 255, green: 75.0 / 255, blue: 152.0 / 255, alpha: 1)
+        self.navigationController!.navigationBar.frame = CGRectMake(0, 0, 375, 60)
         self.navigationController!.navigationBar.translucent = false
         self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         self.navigationController!.navigationBar.barTintColor = color
@@ -69,6 +70,4 @@ class CarbonViewController: UIViewController {
         carbonTabSwipeNavigation.setSelectedColor(color, font: UIFont.boldSystemFontOfSize(14))
         
     }
-
-    
 }
