@@ -9,10 +9,12 @@
 import UIKit
 
 class ImageViewController: UIViewController {
+    @IBOutlet weak var taglistView: TagListView!
     
     var image: UIImage?
     private lazy var client : ClarifaiClient =
         ClarifaiClient(appID: clarifaiClientID, appSecret: clarifaiClientSecret)
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var retakeButton: UIButton!
     @IBOutlet weak var doneButton: UIButton!
@@ -32,6 +34,9 @@ class ImageViewController: UIViewController {
         textView.text = "Recognizing..."
         recognizeImage(image)
 
+        
+        taglistView.addTag("AAA")
+        taglistView.addTag("BBB")
     }
     
     @IBAction func backToAlbum(sender: UIButton) {

@@ -10,6 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var taglistView: TagListView!
     // IBOutlets
     @IBOutlet weak var imageView: UIImageView!
     
@@ -25,11 +26,14 @@ class DetailViewController: UIViewController {
     
     @IBAction func imageTagging(sender: AnyObject) {
         if (textView.hidden == true){
+            self.taglistView.hidden = false
             overlayView.hidden = false
             textView.hidden = false
-            textView.text = "Recognizing..."
+            
+            SwiftSpinner.show("Recognizing...")
             recognizeImage(imageView.image)
         }else{
+            self.taglistView.hidden = true
             textView.hidden = true
             overlayView.hidden = true
         }
@@ -54,11 +58,16 @@ class DetailViewController: UIViewController {
         // Send the JPEG to Clarifai for standard image tagging.
         client.recognizeJpegs([jpeg]) {
             (results: [ClarifaiResult]?, error: NSError?) in
+            
+            SwiftSpinner.hide()
+            
             if error != nil {
                 print("Error: \(error)\n")
                 self.textView.text = "Sorry, there was an error recognizing your image."
             } else {
-                self.textView.text = results![0].tags.joinWithSeparator(", ")
+                for tag in results![0].tags {
+                    self.taglistView.addTag(tag)
+                }
             }
             self.tagButton.enabled = true
         }
@@ -67,7 +76,7 @@ class DetailViewController: UIViewController {
     // Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.taglistView.textFont = UIFont.systemFontOfSize(18)
         self.navigationController?.navigationBarHidden = true
 
         if let photo = photo {
@@ -76,6 +85,8 @@ class DetailViewController: UIViewController {
             
             title = photo.city
         }
+        
+
         
     }
     

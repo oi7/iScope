@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2FA31C721CD5A735004FB8E3 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C711CD5A735004FB8E3 /* CameraManager.swift */; };
 		2FA31C761CD5BA66004FB8E3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */; };
+		2FA31C7B1CD6146B004FB8E3 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C781CD6146B004FB8E3 /* CloseButton.swift */; };
+		2FA31C7C1CD6146B004FB8E3 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C791CD6146B004FB8E3 /* TagListView.swift */; };
+		2FA31C7D1CD6146B004FB8E3 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C7A1CD6146B004FB8E3 /* TagView.swift */; };
+		2FA31C7F1CD617E1004FB8E3 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA31C7E1CD617E1004FB8E3 /* SwiftSpinner.swift */; };
 		2FF7DF141CD4A6150015EC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7DF131CD4A6150015EC1A /* AppDelegate.swift */; };
 		2FF7DF1B1CD4A6150015EC1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF191CD4A6150015EC1A /* Main.storyboard */; };
 		2FF7DF1D1CD4A6150015EC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7DF1C1CD4A6150015EC1A /* Assets.xcassets */; };
@@ -119,6 +123,10 @@
 		2FA31C6E1CD5A6A9004FB8E3 /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
 		2FA31C711CD5A735004FB8E3 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		2FA31C781CD6146B004FB8E3 /* CloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		2FA31C791CD6146B004FB8E3 /* TagListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
+		2FA31C7A1CD6146B004FB8E3 /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		2FA31C7E1CD617E1004FB8E3 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		2FF7DF101CD4A6150015EC1A /* iScope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iScope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF7DF131CD4A6150015EC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FF7DF1A1CD4A6150015EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -217,9 +225,29 @@
 			path = iScope/CameraManager;
 			sourceTree = "<group>";
 		};
+		2FA31C771CD6144F004FB8E3 /* TagListView */ = {
+			isa = PBXGroup;
+			children = (
+				2FA31C781CD6146B004FB8E3 /* CloseButton.swift */,
+				2FA31C791CD6146B004FB8E3 /* TagListView.swift */,
+				2FA31C7A1CD6146B004FB8E3 /* TagView.swift */,
+			);
+			name = TagListView;
+			sourceTree = "<group>";
+		};
+		2FA31C801CD617E9004FB8E3 /* SwiftSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				2FA31C7E1CD617E1004FB8E3 /* SwiftSpinner.swift */,
+			);
+			name = SwiftSpinner;
+			sourceTree = "<group>";
+		};
 		2FF7DF071CD4A6150015EC1A = {
 			isa = PBXGroup;
 			children = (
+				2FA31C801CD617E9004FB8E3 /* SwiftSpinner */,
+				2FA31C771CD6144F004FB8E3 /* TagListView */,
 				2FA31C6D1CD5A6A9004FB8E3 /* CameraManager */,
 				2FF7E0341CD4DE030015EC1A /* Clarifai */,
 				2FF7DFD11CD4DD900015EC1A /* AFNetworking */,
@@ -249,13 +277,13 @@
 				2FF7E0391CD4E92A0015EC1A /* PhotoCollectionViewCell.swift */,
 				2FF7DF131CD4A6150015EC1A /* AppDelegate.swift */,
 				2FF7DF4F1CD4AAEC0015EC1A /* CameraViewController.swift */,
+				2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */,
 				2FF7DF531CD4AB1C0015EC1A /* MapViewController.swift */,
 				2FF7DF191CD4A6150015EC1A /* Main.storyboard */,
 				2FF7DF1C1CD4A6150015EC1A /* Assets.xcassets */,
 				2FF7DF1E1CD4A6150015EC1A /* LaunchScreen.storyboard */,
 				2FF7DF211CD4A6150015EC1A /* Info.plist */,
 				2FF7DFCA1CD4DC910015EC1A /* iScope-Bridging-Header.h */,
-				2FA31C751CD5BA66004FB8E3 /* ImageViewController.swift */,
 			);
 			path = iScope;
 			sourceTree = "<group>";
@@ -485,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA31C7B1CD6146B004FB8E3 /* CloseButton.swift in Sources */,
 				2FF7DF501CD4AAEC0015EC1A /* CameraViewController.swift in Sources */,
 				2FF7E0071CD4DD900015EC1A /* AFSecurityPolicy.m in Sources */,
 				2FF7DFFE1CD4DD900015EC1A /* AFHTTPRequestOperationManager.m in Sources */,
@@ -499,7 +528,9 @@
 				2FF7E0191CD4DD900015EC1A /* README.md in Sources */,
 				2FF7E01C1CD4DD900015EC1A /* AFNetworkActivityIndicatorManager.m in Sources */,
 				2FF7E0221CD4DD900015EC1A /* UIAlertView+AFNetworking.m in Sources */,
+				2FA31C7C1CD6146B004FB8E3 /* TagListView.swift in Sources */,
 				2FF7E03A1CD4E92A0015EC1A /* DetailViewController.swift in Sources */,
+				2FA31C7F1CD617E1004FB8E3 /* SwiftSpinner.swift in Sources */,
 				2FF7E0011CD4DD900015EC1A /* AFHTTPSessionManager.m in Sources */,
 				2FF7E0311CD4DD900015EC1A /* UIWebView+AFNetworking.m in Sources */,
 				2FF7E02E1CD4DD900015EC1A /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -514,6 +545,7 @@
 				2FF7E0041CD4DD900015EC1A /* AFNetworkReachabilityManager.m in Sources */,
 				2FF7E0281CD4DD900015EC1A /* UIImageView+AFNetworking.m in Sources */,
 				2FA31C761CD5BA66004FB8E3 /* ImageViewController.swift in Sources */,
+				2FA31C7D1CD6146B004FB8E3 /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
