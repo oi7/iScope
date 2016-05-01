@@ -319,7 +319,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cMJ-oO-0Bw">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cMJ-oO-0Bw">
                                             <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
                                         </imageView>
                                     </subviews>

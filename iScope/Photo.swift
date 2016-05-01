@@ -14,10 +14,8 @@ struct Photo {
     let city:String
     
     init(imageName:String, city:String){
-        
         self.imageName = imageName
         self.city = city
-        
     }
     
 }

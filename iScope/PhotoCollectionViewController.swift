@@ -15,10 +15,14 @@ class PhotoCollectionViewController: UICollectionViewController, UIViewControlle
     // Properties
     lazy var photos:[Photo] = {
         return [
-            Photo(imageName: "image1", city: "Boston"),
-            Photo(imageName: "image2", city: "San Francisco"),
-            Photo(imageName: "image3", city: "New York"),
-            Photo(imageName: "image4", city: "Taipei")
+            Photo(imageName: "m1", city: "Boston"),
+            Photo(imageName: "m2", city: "San Francisco"),
+            Photo(imageName: "m3", city: "New York"),
+            Photo(imageName: "m4", city: "Taipei"),
+            Photo(imageName: "m5", city: "Boston"),
+            Photo(imageName: "m6", city: "San Francisco"),
+            Photo(imageName: "m7", city: "New York"),
+            Photo(imageName: "m8", city: "Taipei")
         ]
         
     }()
