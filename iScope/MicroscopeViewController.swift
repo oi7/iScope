@@ -17,7 +17,7 @@ class MicroscopeViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var textView: UITextView!
-    
+    @IBOutlet weak var overlayView: UIView!
     private lazy var client : ClarifaiClient =
         ClarifaiClient(appID: clarifaiClientID, appSecret: clarifaiClientSecret)
     
@@ -58,6 +58,7 @@ class MicroscopeViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     private func recognizeImage(image: UIImage!) {
+        textView.hidden = false
         // Scale down the image. This step is optional. However, sending large images over the
         // network is slow and does not significantly improve recognition performance.
         let size = CGSizeMake(320, 320 * image.size.height / image.size.width)
@@ -76,7 +77,7 @@ class MicroscopeViewController: UIViewController, UIImagePickerControllerDelegat
                 print("Error: \(error)\n")
                 self.textView.text = "Sorry, there was an error recognizing your image."
             } else {
-                self.textView.text = "Tags:\n" + results![0].tags.joinWithSeparator(", ")
+                self.textView.text = results![0].tags.joinWithSeparator(", ")
             }
 //            self.tagButton.enabled = true
         }

@@ -20,16 +20,18 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var tagButton: UIBarButtonItem!
-    
+    @IBOutlet weak var overlayView: UIView!
     private lazy var client : ClarifaiClient = ClarifaiClient(appID: clarifaiClientID, appSecret: clarifaiClientSecret)
     
     @IBAction func imageTagging(sender: AnyObject) {
         if (textView.hidden == true){
+            overlayView.hidden = false
             textView.hidden = false
             textView.text = "Recognizing..."
             recognizeImage(imageView.image)
         }else{
             textView.hidden = true
+            overlayView.hidden = true
         }
     }
     
