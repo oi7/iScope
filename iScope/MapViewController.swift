@@ -59,7 +59,7 @@ class MapViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        PHPhotoLibrary.sharedPhotoLibrary().registerChangeObserver(self)
+//        PHPhotoLibrary.sharedPhotoLibrary().registerChangeObserver(self)
     }
     
 //    init() {
@@ -73,6 +73,11 @@ class MapViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        loadImage()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         loadImage()
     }
 
@@ -92,9 +97,9 @@ class MapViewController: UIViewController {
     }
     
     func loadImage() {
-        if self.tabBarController?.selectedIndex != 2 {
-            return
-        }
+//        if self.tabBarController?.selectedIndex != 2 {
+//            return
+//        }
         // clean annotaions
         self.mapView.removeAnnotations(self.mapView.annotations)
         
